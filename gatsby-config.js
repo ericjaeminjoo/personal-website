@@ -1,13 +1,19 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Tailwind CSS + Styled-Components + Storybook Starter`,
-    description: `A bare-bones Tailwind CSS + Styled-Components + Storybook starter to kickoff your project. `,
-    author: `@dennisvash`,
+    title: `Portfolio Website with Gatsby, TailwindCSS,Styled-Components, & Storybook Starter`,
+    description: `Eric Jae-Min Joo's Portfolio Website.`,
+    author: `@ericjaeminjoo`,
   },
   plugins: [
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
-    'gatsby-plugin-resolve-src',
+    `gatsby-plugin-resolve-src`,
+    {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve(`./src/components/Layout/Layout.js`),
+      },
+    },
   ],
 };
