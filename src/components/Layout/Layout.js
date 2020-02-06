@@ -1,9 +1,9 @@
 import tw from 'tailwind.macro';
 import styled from 'styled-components';
 
-const Layout = styled.div`
-  ${tw`mx-auto flex-wrap w-full`}
-  max-width: 1200px;
+const Layout = styled.main`
+  ${tw`mx-auto w-full`}
+  max-width: 1440px;
 `;
 
 export default Layout;

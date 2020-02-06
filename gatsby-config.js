@@ -15,5 +15,14 @@ module.exports = {
         component: require.resolve(`./src/components/Layout/Layout.js`),
       },
     },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        custom: {
+          families: ['Freight Text Pro'],
+          urls: ['./src/fonts/fonts.css'],
+        },
+      },
+    },
   ],
 };
