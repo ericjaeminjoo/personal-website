@@ -1,5 +1,3 @@
-import React from 'react';
-// import tw from 'tailwind.macro';
 import styled from 'styled-components';
 
 const Paragraph = styled.p`

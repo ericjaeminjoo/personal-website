@@ -1,13 +1,20 @@
-const deviceScreenBreakPoints = {
-  viewport4: '480px',
-  viewport7: '768px',
-  viewport9: '992px',
-  viewport12: '1200px',
+// Media query breakpoints taken from https://jsramblings.com/2018/02/04/styled-components-media-queries.html
+const size = {
+  mobileS: '320px',
+  mobileM: '375px',
+  mobileL: '425px',
+  tablet: '768px',
+  laptop: '1024px',
+  laptopL: '1440px',
+  desktop: '1920px',
 };
 
-export const viewport = {
-  viewport4: `(min-width: ${deviceScreenBreakPoints.viewport4})`,
-  viewport7: `(min-width: ${deviceScreenBreakPoints.viewport7})`,
-  viewport9: `(min-width: ${deviceScreenBreakPoints.viewport9})`,
-  viewport12: `(min-width: ${deviceScreenBreakPoints.viewport12})`,
+export const device = {
+  mobileS: `(min-width: ${size.mobileS})`,
+  mobileM: `(min-width: ${size.mobileM})`,
+  mobileL: `(min-width: ${size.mobileL})`,
+  tablet: `(min-width: ${size.tablet})`,
+  laptop: `(min-width: ${size.laptop})`,
+  laptopL: `(min-width: ${size.laptopL})`,
+  desktop: `(min-width: ${size.desktop})`,
 };
