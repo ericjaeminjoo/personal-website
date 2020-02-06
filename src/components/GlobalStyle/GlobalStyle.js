@@ -23,6 +23,11 @@ const GlobalStyle = createGlobalStyle`
         position: absolute;
         z-index: 100;
     }
+    strong {
+        font-family: 'Manrope-Regular', sans-serif;
+        font-weight: 500;
+        color: #35385d;
+    }
 `;
 
 export default GlobalStyle;

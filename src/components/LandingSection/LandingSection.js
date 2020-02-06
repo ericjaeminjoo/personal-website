@@ -1,12 +1,17 @@
 import React from 'react';
 import tw from 'tailwind.macro';
 import styled from 'styled-components';
-import { BlobOne, BlobTwo, BlobThree } from '../icons/Blobs.svg.react';
-import { WaveOne } from '../icons/Waves.svg.react';
+import { BlobOne, BlobTwo, BlobThree } from '../svg/Blobs.svg.react';
+import { WaveOne } from '../svg/Waves.svg.react';
+import { viewport } from '../media';
 
 const Container = styled.section`
   ${tw`flex justify-center items-start flex-col min-h-screen mx-auto`}
   padding: 120px 67px;
+
+  @media ${viewport.viewport9} {
+    padding-left: 130px;
+  }
 `;
 
 const HeaderHello = styled.h2`
@@ -20,7 +25,7 @@ const HeaderIntro = styled.h1`
 `;
 
 const HeaderSelf = styled.h3`
-  font-size: 1.24rem;
+  font-size: 1.25rem;
 `;
 
 const TextBold = styled.span`
@@ -41,9 +46,9 @@ const BlobContainer = styled.div`
   }
   svg:nth-child(2) {
     position: absolute;
-    top: 145px;
-    right: 195px;
-    width: 450px;
+    top: 175px;
+    right: 175px;
+    width: 410px;
     animation: move 10s ease-in-out infinite;
     transform-origin: 50% 50%;
   }
@@ -59,9 +64,11 @@ const BlobContainer = styled.div`
 
 const WaveContainer = styled.div`
   svg {
-    margin-top: -275px;
+    margin-top: -273px;
     margin-left: calc(-50vw + 50% + 9px);
     width: calc(100vw - 17px);
+    stroke: #000;
+    stroke-width: 0.01;
   }
 `;
 
@@ -73,7 +80,7 @@ const LandingSection = () => (
         I'm <TextBold>Eric Jae-Min Joo</TextBold>, <br />a front-end developer passionate about
         building beautiful UI, amazing UX, {'&'} learning new web technologies.
       </HeaderIntro>
-      <HeaderSelf>Contact me here 🤝 ericjaeminjoo@gmail.com</HeaderSelf>
+      <HeaderSelf>Get in touch 🤝 ericjaeminjoo@gmail.com</HeaderSelf>
       <BlobContainer>
         <BlobOne />
         <BlobTwo />

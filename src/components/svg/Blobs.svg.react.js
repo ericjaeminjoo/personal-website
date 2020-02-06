@@ -8,6 +8,9 @@ const BlobOne = props => (
         fill="#c9b6e4"
       />
     </g>
+    <filter id="shadow">
+      <feDropShadow dx="0.2" dy="0.4" stdDeviation="0.2" />
+    </filter>
   </svg>
 );
 
