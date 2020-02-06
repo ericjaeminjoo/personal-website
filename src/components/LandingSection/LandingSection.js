@@ -2,10 +2,11 @@ import React from 'react';
 import tw from 'tailwind.macro';
 import styled from 'styled-components';
 import { BlobOne, BlobTwo, BlobThree } from '../icons/Blobs.svg.react';
+import { WaveOne } from '../icons/Waves.svg.react';
 
 const Container = styled.section`
   ${tw`flex justify-center items-start flex-col min-h-screen mx-auto`}
-  padding: 120px 100px;
+  padding: 120px 67px;
 `;
 
 const HeaderHello = styled.h2`
@@ -34,7 +35,7 @@ const BlobContainer = styled.div`
     position: absolute;
     top: 193px;
     right: 155px;
-    width: 800px;
+    width: 700px;
     animation: move 10s ease-in-out infinite;
     transform-origin: 50% 50%;
   }
@@ -48,28 +49,41 @@ const BlobContainer = styled.div`
   }
   svg:nth-child(3) {
     position: absolute;
-    top: 567px;
-    right: 585px;
+    top: 507px;
+    right: 505px;
     width: 325px;
     animation: move 10s ease-in-out infinite;
     transform-origin: 50% 50%;
   }
 `;
 
+const WaveContainer = styled.div`
+  svg {
+    margin-top: -275px;
+    margin-left: calc(-50vw + 50% + 9px);
+    width: calc(100vw - 17px);
+  }
+`;
+
 const LandingSection = () => (
-  <Container>
-    <HeaderHello>Hi there! 👋</HeaderHello>
-    <HeaderIntro>
-      I'm <TextBold>Eric Jae-Min Joo</TextBold>, <br />a front-end developer passionate about
-      building beautiful UI, amazing UX, {'&'} learning new web technologies.
-    </HeaderIntro>
-    <HeaderSelf>Contact me here 🤝 ericjaeminjoo@gmail.com</HeaderSelf>
-    <BlobContainer>
-      <BlobOne />
-      <BlobTwo />
-      <BlobThree />
-    </BlobContainer>
-  </Container>
+  <div>
+    <Container>
+      <HeaderHello>Hi there! 👋</HeaderHello>
+      <HeaderIntro>
+        I'm <TextBold>Eric Jae-Min Joo</TextBold>, <br />a front-end developer passionate about
+        building beautiful UI, amazing UX, {'&'} learning new web technologies.
+      </HeaderIntro>
+      <HeaderSelf>Contact me here 🤝 ericjaeminjoo@gmail.com</HeaderSelf>
+      <BlobContainer>
+        <BlobOne />
+        <BlobTwo />
+        <BlobThree />
+      </BlobContainer>
+    </Container>
+    <WaveContainer>
+      <WaveOne />
+    </WaveContainer>
+  </div>
 );
 
 export default LandingSection;
