@@ -1,19 +1,27 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
-    html {
-        font-size: 100%;
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
     }
+    html {
+        box-sizing: border-box;
+    }
+    html,
     body {
-        color: #000;
         font-family: 'Manrope-ExtraLight', sans-serif;
         font-weight: 200;
-        font-size:
         line-height: 1.4;
-        box-sizing: border-box;
+        color: #2e3151;
         text-decoration: none;
         padding: 0;
         margin: 0;
+        width: 100%;
+        background-color: #ddefff;
+        position: absolute;
+        z-index: 100;
     }
 `;
 
