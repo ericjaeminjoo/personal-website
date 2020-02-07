@@ -99,10 +99,19 @@ const Logos = styled.div`
   ${tw`flex items-center justify-around`}
   svg,
   img {
-    width: 34px;
+    width: 30px;
   }
   a {
-    margin: -4px 7px 0;
+    margin: -4px 4px 0;
+  }
+  @media ${device.mobileM} {
+    svg,
+    img {
+      width: 34px;
+    }
+    a {
+      margin: -4px 7px 0;
+    }
   }
 `;
 
