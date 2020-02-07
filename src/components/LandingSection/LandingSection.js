@@ -53,6 +53,10 @@ const WaveAnimation = styled.span`
 const HeaderHello = styled.h2`
   font-size: 1.4rem;
 
+  @media ${device.tablet} {
+    font-size: 1.8rem;
+  }
+
   @media ${device.laptop} {
     font-size: 2.48rem;
   }
@@ -61,6 +65,11 @@ const HeaderHello = styled.h2`
 const HeaderIntro = styled.h1`
   font-size: 1.4rem;
   margin: 40px 0;
+
+  @media ${device.tablet} {
+    max-width: 600px;
+    font-size: 1.8rem;
+  }
 
   @media ${device.laptop} {
     max-width: 700px;
@@ -72,6 +81,10 @@ const HeaderIntro = styled.h1`
 const HeaderSelf = styled.h3`
   ${tw`flex`}
   font-size: 1.22rem;
+
+  @media ${device.tablet} {
+    font-size: 1.23rem;
+  }
 
   @media ${device.laptop} {
     font-size: 1.25rem;
@@ -203,14 +216,15 @@ const BlobContainer = styled.div`
 `;
 
 const WaveContainer = styled.div`
-  svg {
-    margin-left: calc(-50vw + 50% + 9px);
-    width: calc(100vw - 17px);
-    stroke: #000;
-    stroke-width: 0.01;
+  @media ${device.mobileM} {
+    margin-top: -200px;
   }
   @media ${device.laptopL} {
     svg {
+      margin-left: calc(-50vw + 50% + 9px);
+      width: calc(100vw - 17px);
+      stroke: #000;
+      stroke-width: 0.01;
       margin-top: -222px;
     }
   }
