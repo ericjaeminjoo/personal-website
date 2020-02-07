@@ -89,9 +89,50 @@ const BlobContainer = styled.div`
     animation: move 10s ease-in-out infinite;
     transform-origin: 50% 50%;
   }
+  @media ${device.mobileL} {
+    svg:nth-child(1) {
+      top: 135px;
+      right: auto;
+      left: 0;
+      width: 665px;
+    }
+    svg:nth-child(2) {
+      top: 100px;
+      left: auto;
+      right: 3px;
+      width: 290px;
+    }
+    svg:nth-child(3) {
+      top: 500px;
+      left: auto;
+      right: 225px;
+      width: 215px;
+    }
+  }
+  @media ${device.tablet} {
+    svg:nth-child(1) {
+      top: 160px;
+      left: auto;
+      right: 0px;
+      width: 575px;
+    }
+    svg:nth-child(2) {
+      top: 130px;
+      left: auto;
+      right: 57px;
+      width: 290px;
+    }
+    svg:nth-child(3) {
+      top: 465px;
+      left: auto;
+      right: 300px;
+      width: 215px;
+    }
+  }
   @media ${device.laptopL} {
     svg:nth-child(1) {
       top: 160px;
+      left: auto;
       right: 0px;
       width: 635px;
     }
@@ -111,6 +152,7 @@ const BlobContainer = styled.div`
   @media ${device.desktop} {
     svg:nth-child(1) {
       top: 193px;
+      left: auto;
       right: 155px;
       width: 700px;
     }

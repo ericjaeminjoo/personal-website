@@ -17,6 +17,8 @@ const Container = styled.section`
 `;
 
 const AboutContent = styled.div`
+  margin-bottom: 54px;
+
   @media ${device.laptopL} {
     margin-top: -56px;
     max-width: 650px;
