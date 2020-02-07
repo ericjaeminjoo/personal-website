@@ -1,48 +1,56 @@
 import React from 'react';
 import tw from 'tailwind.macro';
 import styled from 'styled-components';
-import Paragraph from '../Paragraph/Paragraph';
+import { device } from '../media';
 
 const Container = styled.section`
-  ${tw`flex justify-center flex-row mx-auto`}
-  margin-left: calc(-50vw + 50% + 9px);
-  width: calc(100vw - 17px);
+  ${tw`flex justify-center flex-col mx-auto`}
   background-color: rgb(80, 0, 202, 0.1);
+  padding: 0 42px;
+
+  @media ${device.laptopL} {
+    ${tw`flex-row`}
+    margin-left: calc(-50vw + 50% + 9px);
+    width: calc(100vw - 17px);
+  }
 `;
 
 const SectionTitle = styled.div`
-  ${tw`uppercase tracking-widest`}
+  ${tw`uppercase tracking-widest mt-16`}
   width: 200px;
   font-family: 'Manrope-ExtraBold', sans-serif;
   font-weight: 800;
   color: #35385d;
-  margin-top: -56px;
+
+  @media ${device.laptopL} {
+    margin-top: -56px;
+  }
 `;
 
 const AboutContent = styled.div`
-  max-width: 650px;
-  margin-top: -56px;
+  @media ${device.laptopL} {
+    margin-top: -56px;
+    max-width: 650px;
+  }
 `;
 
 const AboutSection = () => (
   <Container>
     <SectionTitle>Background</SectionTitle>
     <AboutContent>
-      <Paragraph>
-        Lorem ipsum dolor sit <strong>amet consectetur</strong> adipisicing elit. Eligendi non quis
-        exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab
-        temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?
-      </Paragraph>
-      <Paragraph>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem
-        culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores
-        quasi cupiditate. Voluptatum ducimus voluptates voluptas?
-      </Paragraph>
-      <Paragraph>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem
-        culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores
-        quasi cupiditate. Voluptatum ducimus voluptates voluptas?
-      </Paragraph>
+      <p>
+        I recently graduated from <strong>McGill University</strong>, located in Montréal, Québec,
+        with a bachelor's degree in <strong>Software Engineering</strong>.
+      </p>
+      <p>
+        I combine my sense of aesthetics for design and technical abilities to develop beautiful
+        products. I love challenging myself with the unknown as it gives me an opportunity on
+        learning new technologies; which in turn, keeps me motivated to keep coding!
+      </p>
+      <p>
+        <strong>If I'm not sitting at my computer</strong>, I'm either learning new dishes to cook,
+        hanging out with friends, or just being a 🤓.
+      </p>
     </AboutContent>
   </Container>
 );

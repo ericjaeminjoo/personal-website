@@ -24,9 +24,12 @@ const GlobalStyle = createGlobalStyle`
         z-index: 100;
     }
     strong {
-        font-family: 'Manrope-Regular', sans-serif;
-        font-weight: 500;
+        font-family: 'Manrope-ExtraBold', sans-serif;
+        font-weight: 800;
         color: #35385d;
+    }
+    p {
+        margin-bottom: 30px;
     }
 `;
 
