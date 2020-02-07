@@ -100,6 +100,7 @@ const Logos = styled.div`
   svg,
   img {
     width: 30px;
+    max-width: none;
   }
   a {
     margin: -4px 4px 0;
