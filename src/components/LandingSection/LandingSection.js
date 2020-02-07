@@ -112,83 +112,83 @@ const BlobContainer = styled.div`
   z-index: -1;
   svg:nth-child(1) {
     position: absolute;
-    top: 120px;
-    right: 80px;
-    width: 900px;
+    top: 29vh;
+    right: 100px;
+    width: 375px;
     animation: move 10s ease-in-out infinite;
     transform-origin: 50% 50%;
   }
   svg:nth-child(2) {
     position: absolute;
-    top: 0;
-    left: 130px;
-    width: 390px;
+    top: 21vh;
+    left: 190px;
+    width: 190px;
     animation: move 10s ease-in-out infinite;
     transform-origin: 50% 50%;
   }
   svg:nth-child(3) {
     position: absolute;
-    top: 270px;
-    left: 100px;
-    width: 400px;
+    top: 56vh;
+    right: 27px;
+    width: 245px;
     animation: move 10s ease-in-out infinite;
     transform-origin: 50% 50%;
   }
   @media ${device.mobileL} {
     svg:nth-child(1) {
-      top: 135px;
-      right: auto;
-      left: 0;
-      width: 665px;
-    }
-    svg:nth-child(2) {
-      top: 100px;
-      left: auto;
-      right: 3px;
-      width: 290px;
-    }
-    svg:nth-child(3) {
-      top: 500px;
-      left: auto;
-      right: 225px;
-      width: 215px;
-    }
-  }
-  @media ${device.tablet} {
-    svg:nth-child(1) {
-      top: 160px;
+      top: 29vh;
       left: auto;
       right: 0px;
       width: 575px;
     }
     svg:nth-child(2) {
-      top: 130px;
+      top: 26vh;
       left: auto;
       right: 57px;
       width: 290px;
     }
     svg:nth-child(3) {
-      top: 465px;
+      top: 59vh;
       left: auto;
-      right: 300px;
+      right: 320px;
+      width: 215px;
+    }
+  }
+  @media ${device.tablet} {
+    svg:nth-child(1) {
+      top: 29vh;
+      left: auto;
+      right: 0px;
+      width: 575px;
+    }
+    svg:nth-child(2) {
+      top: 26vh;
+      left: auto;
+      right: 57px;
+      width: 290px;
+    }
+    svg:nth-child(3) {
+      top: 59vh;
+      left: auto;
+      right: 320px;
       width: 215px;
     }
   }
   @media ${device.laptopL} {
     svg:nth-child(1) {
-      top: 160px;
+      top: 24vh;
       left: auto;
       right: 0px;
       width: 635px;
     }
     svg:nth-child(2) {
-      top: 150px;
+      top: 19vh;
       left: auto;
       right: 77px;
       width: 300px;
     }
     svg:nth-child(3) {
-      top: 445px;
+      top: 56vh;
       left: auto;
       right: 330px;
       width: 260px;
@@ -216,22 +216,27 @@ const BlobContainer = styled.div`
 `;
 
 const WaveContainer = styled.div`
+  margin-top: -80px;
   @media ${device.mobileM} {
+    margin-top: -120px;
+  }
+  @media ${device.mobileL} {
+    margin-top: -160px;
+  }
+  @media ${device.laptop} {
     margin-top: -200px;
   }
   @media ${device.laptopL} {
+    margin-top: -232px;
     svg {
       margin-left: calc(-50vw + 50% + 9px);
       width: calc(100vw - 17px);
       stroke: #000;
       stroke-width: 0.01;
-      margin-top: -222px;
     }
   }
   @media ${device.desktop} {
-    svg {
-      margin-top: -273px;
-    }
+    margin-top: -273px;
   }
 `;
 
