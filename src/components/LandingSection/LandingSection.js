@@ -1,6 +1,7 @@
 import React from 'react';
 import tw from 'tailwind.macro';
 import styled from 'styled-components';
+import { GithubIcon, LinkedIn, Gmail } from '../icons';
 import { BlobOne, BlobTwo, BlobThree } from '../svg/Blobs.svg.react';
 import { WaveOne } from '../svg/Waves.svg.react';
 import { device } from '../media';
@@ -37,10 +38,22 @@ const HeaderIntro = styled.h1`
 `;
 
 const HeaderSelf = styled.h3`
+  ${tw`flex`}
   font-size: 1.22rem;
 
   @media ${device.laptop} {
     font-size: 1.25rem;
+  }
+`;
+
+const Logos = styled.div`
+  ${tw`flex items-center justify-around`}
+  svg,
+  img {
+    width: 34px;
+  }
+  a {
+    margin: -4px 7px 0;
   }
 `;
 
@@ -142,7 +155,23 @@ const LandingSection = () => (
         I'm <TextBold>Eric Jae-Min Joo</TextBold>, <br />a front-end developer passionate about
         building beautiful UI {'&'} UX as well as learning new web technologies.
       </HeaderIntro>
-      <HeaderSelf>Get in touch 🤝 ericjaeminjoo@gmail.com</HeaderSelf>
+      <HeaderSelf>
+        Get in touch:
+        <Logos>
+          <a href="https://github.com/jjmin" target="_blank" rel="noopener noreferrer">
+            <GithubIcon />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/ericjaeminjoo"
+            target="_blank"
+            rel="noopener noreferrer">
+            <LinkedIn />
+          </a>
+          <a href="mailto:ericjaeminjoo@gmail.com" target="_blank" rel="noopener noreferrer">
+            <Gmail />
+          </a>
+        </Logos>
+      </HeaderSelf>
       <BlobContainer>
         <BlobOne />
         <BlobTwo />

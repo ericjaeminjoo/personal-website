@@ -1,6 +1,7 @@
 import React from 'react';
 import tw from 'tailwind.macro';
 import styled from 'styled-components';
+import SectionTitle from '../SectionTitle/SectionTitle';
 import { device } from '../media';
 
 const Container = styled.section`
@@ -12,18 +13,6 @@ const Container = styled.section`
     ${tw`flex-row`}
     margin-left: calc(-50vw + 50% + 9px);
     width: calc(100vw - 17px);
-  }
-`;
-
-const SectionTitle = styled.div`
-  ${tw`uppercase tracking-widest mt-16`}
-  width: 200px;
-  font-family: 'Manrope-ExtraBold', sans-serif;
-  font-weight: 800;
-  color: #35385d;
-
-  @media ${device.laptopL} {
-    margin-top: -56px;
   }
 `;
 
