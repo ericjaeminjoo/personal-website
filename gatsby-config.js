@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Portfolio Website with Gatsby, TailwindCSS,Styled-Components, & Storybook Starter`,
-    description: `Eric Jae-Min Joo's Portfolio Website.`,
+    title: `Eric Jae-Min Joo's Portfolio Website`,
+    description: `Built with Gatsby, TailwindCSS, Styled-Components, & Storybook.`,
     author: `@ericjaeminjoo`,
   },
   plugins: [
@@ -9,6 +9,8 @@ module.exports = {
     `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-resolve-src`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-layout`,
       options: {
@@ -22,6 +24,14 @@ module.exports = {
           families: ['Freight Text Pro'],
           urls: ['./src/fonts/fonts.css'],
         },
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data`,
+        ignore: [`**/\.*`], // ignore files starting with a dot
       },
     },
   ],

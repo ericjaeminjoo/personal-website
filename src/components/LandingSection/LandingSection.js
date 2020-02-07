@@ -1,10 +1,14 @@
 import React from 'react';
 import tw from 'tailwind.macro';
 import styled from 'styled-components';
-import { GithubIcon, LinkedIn, Gmail } from '../icons';
-import { BlobOne, BlobTwo, BlobThree } from '../svg/Blobs.svg.react';
-import { WaveOne } from '../svg/Waves.svg.react';
+import { GithubIcon, LinkedIn, Gmail } from '../../icons';
+import { BlobOne, BlobTwo, BlobThree } from '../../svg/Blobs.svg.react';
+import { WaveOne } from '../../svg/Waves.svg.react';
 import { device } from '../media';
+import resumeIcon from '../../images/resume.png';
+import resume from '../../data/resume-2020.pdf';
+
+console.log(resumeIcon);
 
 const Container = styled.section`
   ${tw`flex justify-center items-start flex-col min-h-screen mx-auto`}
@@ -240,6 +244,18 @@ const WaveContainer = styled.div`
   }
 `;
 
+const query = graphql`
+  query {
+    resumeIcon: file(relativePath: { eq: "resume.png" }) {
+      childImageSharp {
+        fixed(width: 500, quality: 100) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
+`;
+
 const LandingSection = () => (
   <div>
     <Container>
@@ -264,6 +280,9 @@ const LandingSection = () => (
           </a>
           <a href="mailto:ericjaeminjoo@gmail.com" target="_blank" rel="noopener noreferrer">
             <Gmail />
+          </a>
+          <a href={resume} target="_blank" rel="noopener noreferrer">
+            <img src={resumeIcon} alt="Resume Icon" />
           </a>
         </Logos>
       </HeaderSelf>
