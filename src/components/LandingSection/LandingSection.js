@@ -2,13 +2,10 @@ import React from 'react';
 import tw from 'tailwind.macro';
 import styled from 'styled-components';
 import { GithubIcon, LinkedIn, Gmail } from '../../icons';
-import { BlobOne, BlobTwo, BlobThree } from '../../svg/Blobs.svg.react';
 import { WaveOne } from '../../svg/Waves.svg.react';
 import { device } from '../media';
 import resumeIcon from '../../images/resume.png';
 import resume from '../../data/resume-2020.pdf';
-
-console.log(resumeIcon);
 
 const Container = styled.section`
   ${tw`flex justify-center items-start flex-col min-h-screen mx-auto`}
@@ -95,6 +92,120 @@ const HeaderSelf = styled.h3`
   }
 `;
 
+// Blended Photo & Gradient Blob Animation from https://codepen.io/markmiscavage/pen/NoJEYG
+const Headshot = styled.div`
+  display: block;
+  position: absolute;
+  top: 36vh;
+  right: 22vh;
+  width: 322px;
+  height: 322px;
+  overflow: hidden;
+  border-radius: 48% 52% 68% 32% / 42% 28% 72% 58%;
+  background-size: 500% 100%;
+  background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+  animation: blobber 50s 0s linear infinite, cobler 10s 0s linear infinite alternate;
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    left: 5px;
+    background-color: #000;
+    background-image: url(https://avatars3.githubusercontent.com/u/18724479?s=460&v=4);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    mix-blend-mode: hard-light;
+    animation: blobber 50s 0s ease-in-out infinite, wobbler 11s 0s linear infinite alternate;
+  }
+
+  @keyframes blobber {
+    0% {
+      border-radius: 48% 52% 68% 32% / 42% 28% 72% 58%;
+    }
+    5% {
+      border-radius: 48% 52% 41% 59% / 66% 37% 63% 34%;
+    }
+    10% {
+      border-radius: 69% 31% 71% 29% / 67% 31% 69% 33%;
+    }
+    15% {
+      border-radius: 60% 40% 71% 29% / 63% 65% 35% 37%;
+    }
+    20% {
+      border-radius: 61% 39% 51% 49% / 57% 58% 42% 43%;
+    }
+    25% {
+      border-radius: 66% 34% 25% 75% / 47% 30% 70% 53%;
+    }
+    30% {
+      border-radius: 32% 68% 38% 62% / 65% 60% 40% 35%;
+    }
+    35% {
+      border-radius: 63% 37% 41% 59% / 35% 38% 62% 65%;
+    }
+    40% {
+      border-radius: 57% 43% 49% 51% / 55% 71% 29% 45%;
+    }
+    45% {
+      border-radius: 47% 53% 34% 66% / 65% 36% 64% 35%;
+    }
+    50% {
+      border-radius: 44% 56% 32% 68% / 69% 26% 74% 31%;
+    }
+    55% {
+      border-radius: 28% 72% 37% 63% / 71% 44% 56% 29%;
+    }
+    60% {
+      border-radius: 38% 62% 35% 65% / 74% 53% 47% 26%;
+    }
+    65% {
+      border-radius: 73% 27% 46% 54% / 54% 47% 53% 46%;
+    }
+    70% {
+      border-radius: 75% 25% 47% 53% / 49% 53% 47% 51%;
+    }
+    75% {
+      border-radius: 62% 38% 43% 57% / 55% 60% 40% 45%;
+    }
+    80% {
+      border-radius: 41% 59% 65% 35% / 73% 50% 50% 27%;
+    }
+    85% {
+      border-radius: 55% 45% 57% 43% / 73% 61% 39% 27%;
+    }
+    90% {
+      border-radius: 74% 26% 33% 67% / 40% 65% 35% 60%;
+    }
+    95% {
+      border-radius: 58% 42% 57% 43% / 53% 45% 55% 47%;
+    }
+    100% {
+      border-radius: 48% 52% 68% 32% / 42% 28% 72% 58%;
+    }
+  }
+  @keyframes cobler {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 100% 0%;
+    }
+  }
+  @keyframes wobbler {
+    0% {
+      transform: rotateZ(8deg);
+    }
+    100% {
+      transform: rotateZ(-8deg);
+    }
+  }
+`;
+
 const Logos = styled.div`
   ${tw`flex items-center justify-around`}
   svg,
@@ -122,113 +233,6 @@ const TextBold = styled.span`
   color: #35385d;
 `;
 
-const BlobContainer = styled.div`
-  z-index: -1;
-  svg:nth-child(1) {
-    position: absolute;
-    top: 29vh;
-    right: 100px;
-    width: 375px;
-    animation: move 10s ease-in-out infinite;
-    transform-origin: 50% 50%;
-  }
-  svg:nth-child(2) {
-    position: absolute;
-    top: 21vh;
-    left: 190px;
-    width: 190px;
-    animation: move 10s ease-in-out infinite;
-    transform-origin: 50% 50%;
-  }
-  svg:nth-child(3) {
-    position: absolute;
-    top: 56vh;
-    right: 27px;
-    width: 245px;
-    animation: move 10s ease-in-out infinite;
-    transform-origin: 50% 50%;
-  }
-  @media ${device.mobileL} {
-    svg:nth-child(1) {
-      top: 29vh;
-      left: auto;
-      right: 0px;
-      width: 575px;
-    }
-    svg:nth-child(2) {
-      top: 26vh;
-      left: auto;
-      right: 57px;
-      width: 290px;
-    }
-    svg:nth-child(3) {
-      top: 59vh;
-      left: auto;
-      right: 320px;
-      width: 215px;
-    }
-  }
-  @media ${device.tablet} {
-    svg:nth-child(1) {
-      top: 29vh;
-      left: auto;
-      right: 0px;
-      width: 575px;
-    }
-    svg:nth-child(2) {
-      top: 26vh;
-      left: auto;
-      right: 57px;
-      width: 290px;
-    }
-    svg:nth-child(3) {
-      top: 59vh;
-      left: auto;
-      right: 320px;
-      width: 215px;
-    }
-  }
-  @media ${device.laptopL} {
-    svg:nth-child(1) {
-      top: 24vh;
-      left: auto;
-      right: 0px;
-      width: 635px;
-    }
-    svg:nth-child(2) {
-      top: 19vh;
-      left: auto;
-      right: 77px;
-      width: 300px;
-    }
-    svg:nth-child(3) {
-      top: 56vh;
-      left: auto;
-      right: 330px;
-      width: 260px;
-    }
-  }
-  @media ${device.desktop} {
-    svg:nth-child(1) {
-      top: 193px;
-      left: auto;
-      right: 155px;
-      width: 700px;
-    }
-    svg:nth-child(2) {
-      top: 175px;
-      right: 175px;
-      width: 410px;
-    }
-    svg:nth-child(3) {
-      top: 485px;
-      left: auto;
-      right: 475px;
-      width: 410px;
-    }
-  }
-`;
-
 const WaveContainer = styled.div`
   margin-top: -80px;
   @media ${device.mobileM} {
@@ -251,18 +255,6 @@ const WaveContainer = styled.div`
   }
   @media ${device.desktop} {
     margin-top: -273px;
-  }
-`;
-
-const query = graphql`
-  query {
-    resumeIcon: file(relativePath: { eq: "resume.png" }) {
-      childImageSharp {
-        fixed(width: 500, quality: 100) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
   }
 `;
 
@@ -296,11 +288,7 @@ const LandingSection = () => (
           </a>
         </Logos>
       </HeaderSelf>
-      <BlobContainer>
-        <BlobOne />
-        <BlobTwo />
-        <BlobThree />
-      </BlobContainer>
+      <Headshot />
     </Container>
     <WaveContainer>
       <WaveOne />
