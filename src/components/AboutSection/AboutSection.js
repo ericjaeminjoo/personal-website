@@ -17,7 +17,12 @@ const Container = styled.section`
 `;
 
 const AboutContent = styled.div`
+  font-size: 1.4rem;
   margin-bottom: 54px;
+
+  @media ${device.tablet} {
+    font-size: 1.55rem;
+  }
 
   @media ${device.laptopL} {
     margin-top: -56px;

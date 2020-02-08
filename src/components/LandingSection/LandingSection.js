@@ -52,10 +52,10 @@ const WaveAnimation = styled.span`
 `;
 
 const HeaderHello = styled.h2`
-  font-size: 1.4rem;
+  font-size: 2.3rem;
 
   @media ${device.tablet} {
-    font-size: 1.8rem;
+    font-size: 2.8rem;
   }
 
   @media ${device.laptop} {
@@ -64,12 +64,12 @@ const HeaderHello = styled.h2`
 `;
 
 const HeaderIntro = styled.h1`
-  font-size: 1.4rem;
+  font-size: 2.3rem;
   margin: 40px 0;
 
   @media ${device.tablet} {
     max-width: 600px;
-    font-size: 1.8rem;
+    font-size: 2.8rem;
   }
 
   @media ${device.laptop} {
@@ -81,11 +81,7 @@ const HeaderIntro = styled.h1`
 
 const HeaderSelf = styled.h3`
   ${tw`flex`}
-  font-size: 1.22rem;
-
-  @media ${device.tablet} {
-    font-size: 1.23rem;
-  }
+  font-size: 1.85rem;
 
   @media ${device.laptop} {
     font-size: 1.25rem;

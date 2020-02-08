@@ -11,6 +11,11 @@ const Container = styled.section`
   }
   margin: 75px 0;
   padding: 0 42px;
+  font-size: 1.4rem;
+
+  @media ${device.tablet} {
+    font-size: 1.55rem;
+  }
 
   @media ${device.laptopL} {
     ${tw`flex-row`}
