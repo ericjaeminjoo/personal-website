@@ -50,9 +50,11 @@ const WaveAnimation = styled.span`
 `;
 
 const HeaderHello = styled.h2`
+  margin-top: 3rem;
   font-size: 2.3rem;
 
   @media ${device.tablet} {
+    margin-top: 0;
     font-size: 2.5rem;
   }
 
@@ -63,9 +65,10 @@ const HeaderHello = styled.h2`
 
 const HeaderIntro = styled.h1`
   font-size: 2.3rem;
-  margin: 40px 0;
+  margin: 30px 0;
 
   @media ${device.tablet} {
+    margin: 40px 0;
     max-width: 600px;
     font-size: 2.5rem;
   }
@@ -79,7 +82,11 @@ const HeaderIntro = styled.h1`
 
 const HeaderSelf = styled.h3`
   ${tw`flex`}
-  font-size: 1.85rem;
+  font-size: 1.7rem;
+
+  @media ${device.mobileL} {
+    font-size: 1.85rem;
+  }
 `;
 
 // Blended Photo & Gradient Blob Animation from https://codepen.io/markmiscavage/pen/NoJEYG
@@ -102,6 +109,8 @@ const Headshot = styled.div`
     height: 28rem;
   }
   @media ${device.tablet} {
+    width: 22rem;
+    height: 22rem;
     margin-left: 3rem;
   }
 
@@ -233,15 +242,12 @@ const TextBold = styled.span`
 `;
 
 const WaveContainer = styled.div`
-  margin-top: -80px;
-  @media ${device.mobileM} {
-    margin-top: -120px;
-  }
-  @media ${device.mobileL} {
-    margin-top: -160px;
+  margin-top: -45px;
+  @media ${device.tablet} {
+    margin-top: -140px;
   }
   @media ${device.laptop} {
-    margin-top: -200px;
+    margin-top: -170px;
   }
   @media ${device.laptopL} {
     margin-top: -232px;

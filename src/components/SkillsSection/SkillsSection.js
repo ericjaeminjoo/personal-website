@@ -5,9 +5,9 @@ import SectionTitle from '../SectionTitle/SectionTitle';
 import { device } from '../media';
 
 const Container = styled.section`
-  ${tw`flex justify-center flex-col mx-auto`}
+  ${tw`flex justify-center items-center flex-col mx-auto`}
   div:first-child {
-    margin-top: 0;
+    margin-top: 10px;
   }
   margin: 75px 0;
   padding: 0 42px;
@@ -18,7 +18,7 @@ const Container = styled.section`
   }
 
   @media ${device.laptopL} {
-    ${tw`flex-row`}
+    ${tw`flex-row items-start`}
     padding-top: 20px;
     margin: 100px 0;
     div:first-child {
@@ -30,7 +30,7 @@ const Container = styled.section`
 
 const SkillsContent = styled.div`
   @media ${device.laptopL} {
-    max-width: 650px;
+    max-width: 675px;
   }
 `;
 

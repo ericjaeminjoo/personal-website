@@ -30,7 +30,7 @@ const GlobalStyle = createGlobalStyle`
         color: #35385d;
     }
     p {
-        margin-bottom: 30px;
+        margin-bottom: 26px;
     }
 `;
 

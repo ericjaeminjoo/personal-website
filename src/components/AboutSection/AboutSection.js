@@ -5,20 +5,22 @@ import SectionTitle from '../SectionTitle/SectionTitle';
 import { device } from '../media';
 
 const Container = styled.section`
-  ${tw`flex justify-center flex-col mx-auto`}
+  ${tw`flex justify-center items-center flex-col mx-auto`}
   background-color: rgb(80, 0, 202, 0.1);
-  padding: 0 42px;
+  padding: 0 45px;
 
   @media ${device.laptopL} {
-    ${tw`flex-row`}
+    ${tw`flex-row items-start`}
     margin-left: calc(-50vw + 50% + 9px);
     width: calc(100vw - 17px);
   }
 `;
 
 const AboutContent = styled.div`
-  font-size: 1.4rem;
-  margin-bottom: 54px;
+  font-size: 1.6rem;
+  margin-bottom: 47px;
+  max-width: 675px;
+  width: 100%;
 
   @media ${device.tablet} {
     font-size: 1.55rem;
@@ -26,7 +28,6 @@ const AboutContent = styled.div`
 
   @media ${device.laptopL} {
     margin-top: -56px;
-    max-width: 650px;
   }
 `;
 
