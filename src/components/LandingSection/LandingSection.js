@@ -4,18 +4,16 @@ import styled from 'styled-components';
 import { GithubIcon, LinkedIn, Gmail } from '../../icons';
 import { WaveOne } from '../../svg/Waves.svg.react';
 import { device } from '../media';
+import headshotPhoto from '../../images/headshot-cropped.jpg';
 import resumeIcon from '../../images/resume.png';
 import resume from '../../data/resume-2020.pdf';
 
 const Container = styled.section`
-  ${tw`flex justify-center items-start flex-col min-h-screen mx-auto`}
-  padding: 70px 50px;
+  ${tw`flex flex-wrap-reverse justify-center items-center min-h-screen mx-auto`}
+  padding: 7rem 6rem;
 
-  @media ${device.laptopL} {
-    padding: 120px 120px;
-  }
-  @media ${device.desktop} {
-    padding: 120px 67px;
+  @media ${device.tablet} {
+    ${tw`flex-no-wrap`}
   }
 `;
 
@@ -55,11 +53,11 @@ const HeaderHello = styled.h2`
   font-size: 2.3rem;
 
   @media ${device.tablet} {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
 
   @media ${device.laptop} {
-    font-size: 2.48rem;
+    font-size: 3rem;
   }
 `;
 
@@ -69,12 +67,12 @@ const HeaderIntro = styled.h1`
 
   @media ${device.tablet} {
     max-width: 600px;
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
 
   @media ${device.laptop} {
     max-width: 700px;
-    font-size: 2.48rem;
+    font-size: 3rem;
     margin: 40px 0;
   }
 `;
@@ -82,36 +80,41 @@ const HeaderIntro = styled.h1`
 const HeaderSelf = styled.h3`
   ${tw`flex`}
   font-size: 1.85rem;
-
-  @media ${device.laptop} {
-    font-size: 1.25rem;
-  }
 `;
 
 // Blended Photo & Gradient Blob Animation from https://codepen.io/markmiscavage/pen/NoJEYG
 const Headshot = styled.div`
   display: block;
-  position: absolute;
-  top: 36vh;
-  right: 22vh;
-  width: 322px;
-  height: 322px;
+  position: relative;
   overflow: hidden;
   border-radius: 48% 52% 68% 32% / 42% 28% 72% 58%;
   background-size: 500% 100%;
   background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
   animation: blobber 50s 0s linear infinite, cobler 10s 0s linear infinite alternate;
+  width: 25rem;
+  height: 25rem;
+  box-shadow: 0 16.4px 36.9px -15px rgba(0, 0, 0, 0.028), 0 17.7px 59.3px -15px rgba(0, 0, 0, 0.04),
+    0 22.2px 64.4px -15px rgba(0, 0, 0, 0.05), 0 42.8px 62.4px -15px rgba(0, 0, 0, 0.062),
+    0 100px 125px -15px rgba(0, 0, 0, 0.09);
+
+  @media ${device.mobileL} {
+    width: 28rem;
+    height: 28rem;
+  }
+  @media ${device.tablet} {
+    margin-left: 3rem;
+  }
 
   &:after {
     content: '';
     display: block;
     position: absolute;
-    top: 5px;
-    right: 5px;
-    bottom: 5px;
-    left: 5px;
+    top: 7px;
+    right: 7px;
+    bottom: 7px;
+    left: 7px;
     background-color: #000;
-    background-image: url(https://avatars3.githubusercontent.com/u/18724479?s=460&v=4);
+    background-image: url(${headshotPhoto});
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -257,33 +260,35 @@ const WaveContainer = styled.div`
 const LandingSection = () => (
   <div>
     <Container>
-      <HeaderHello>
-        Hi there! <WaveAnimation>👋</WaveAnimation>
-      </HeaderHello>
-      <HeaderIntro>
-        I'm <TextBold>Eric Jae-Min Joo</TextBold>, <br />a front-end developer passionate about
-        building beautiful UI {'&'} UX as well as learning new web technologies.
-      </HeaderIntro>
-      <HeaderSelf>
-        Get in touch:
-        <Logos>
-          <a href="https://github.com/jjmin" target="_blank" rel="noopener noreferrer">
-            <GithubIcon />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/ericjaeminjoo"
-            target="_blank"
-            rel="noopener noreferrer">
-            <LinkedIn />
-          </a>
-          <a href="mailto:ericjaeminjoo@gmail.com" target="_blank" rel="noopener noreferrer">
-            <Gmail />
-          </a>
-          <a href={resume} target="_blank" rel="noopener noreferrer">
-            <img src={resumeIcon} alt="Resume Icon" />
-          </a>
-        </Logos>
-      </HeaderSelf>
+      <div>
+        <HeaderHello>
+          Hi there! <WaveAnimation>👋</WaveAnimation>
+        </HeaderHello>
+        <HeaderIntro>
+          I'm <TextBold>Eric Jae-Min Joo</TextBold>, <br />a front-end developer passionate about
+          building beautiful UI {'&'} UX as well as learning new web technologies.
+        </HeaderIntro>
+        <HeaderSelf>
+          Get in touch:
+          <Logos>
+            <a href="https://github.com/jjmin" target="_blank" rel="noopener noreferrer">
+              <GithubIcon />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/ericjaeminjoo"
+              target="_blank"
+              rel="noopener noreferrer">
+              <LinkedIn />
+            </a>
+            <a href="mailto:ericjaeminjoo@gmail.com" target="_blank" rel="noopener noreferrer">
+              <Gmail />
+            </a>
+            <a href={resume} target="_blank" rel="noopener noreferrer">
+              <img src={resumeIcon} alt="Resume Icon" />
+            </a>
+          </Logos>
+        </HeaderSelf>
+      </div>
       <Headshot />
     </Container>
     <WaveContainer>
