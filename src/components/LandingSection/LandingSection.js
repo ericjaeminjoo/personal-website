@@ -50,7 +50,7 @@ const WaveAnimation = styled.span`
 `;
 
 const HeaderHello = styled.h2`
-  margin-top: 3rem;
+  margin-top: 0.7rem;
   font-size: 2.3rem;
 
   @media ${device.tablet} {
