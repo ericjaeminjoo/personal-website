@@ -50,7 +50,7 @@ const WaveAnimation = styled.span`
 `;
 
 const HeaderHello = styled.h2`
-  margin-top: 0.7rem;
+  margin-top: -4.5rem;
   font-size: 2.3rem;
 
   @media ${device.tablet} {
@@ -100,11 +100,13 @@ const Headshot = styled.div`
   animation: blobber 50s 0s linear infinite, cobler 10s 0s linear infinite alternate;
   width: 25rem;
   height: 25rem;
+  margin-top: -6rem;
   box-shadow: 0 16.4px 36.9px -15px rgba(0, 0, 0, 0.028), 0 17.7px 59.3px -15px rgba(0, 0, 0, 0.04),
     0 22.2px 64.4px -15px rgba(0, 0, 0, 0.05), 0 42.8px 62.4px -15px rgba(0, 0, 0, 0.062),
     0 100px 125px -15px rgba(0, 0, 0, 0.09);
 
   @media ${device.mobileL} {
+    margin-top: 0;
     width: 28rem;
     height: 28rem;
   }
