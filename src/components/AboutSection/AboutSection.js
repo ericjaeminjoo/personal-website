@@ -17,7 +17,6 @@ const Container = styled.section`
 `;
 
 const AboutContent = styled.div`
-  font-size: 1.6rem;
   margin-bottom: 47px;
   max-width: 675px;
   width: 100%;
