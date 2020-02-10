@@ -2,7 +2,7 @@ import React from 'react';
 import tw from 'tailwind.macro';
 import styled from 'styled-components';
 import { GithubIcon, LinkedIn, Gmail } from '../../icons';
-import { WaveOne } from '../../svg/Waves.svg.react';
+import { WaveOne } from '../../svg/Waves.svg';
 import { device } from '../media';
 import headshotPhoto from '../../images/headshot-cropped.jpg';
 import resumeIcon from '../../images/resume.png';
@@ -281,7 +281,12 @@ const LandingSection = () => (
           data-sal-duration="2000"
           data-sal-delay="200"
           data-sal-easing="ease">
-          Hi there! <WaveAnimation>👋</WaveAnimation>
+          Hi there!{' '}
+          <WaveAnimation>
+            <span role="img" aria-label="Waving Hand Emoji">
+              👋
+            </span>
+          </WaveAnimation>
         </HeaderHello>
         <HeaderIntro
           data-sal="fade"

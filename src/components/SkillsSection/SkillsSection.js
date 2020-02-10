@@ -41,7 +41,9 @@ const SkillsSection = () => (
       data-sal-duration="1000"
       data-sal-delay="300"
       data-sal-easing="ease">
-      👨🏻‍💻 ☕
+      <span role="img" aria-label="Technologist Man and Coffee Emoji">
+        👨🏻‍💻 ☕
+      </span>
     </SectionTitle>
     <SkillsContent
       data-sal="fade"
