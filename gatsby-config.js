@@ -11,6 +11,7 @@ module.exports = {
     `gatsby-plugin-resolve-src`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-scroll-reveal`,
     {
       resolve: `gatsby-plugin-layout`,
       options: {

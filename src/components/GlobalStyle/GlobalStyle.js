@@ -10,13 +10,10 @@ const GlobalStyle = createGlobalStyle`
     }
     html {
         font-size: 62.5%;
+        box-sizing: border-box;
     }
     body {
         font-size: 1.6rem;
-    }
-    html,
-    body {
-        box-sizing: border-box;
         font-family: 'Manrope-ExtraLight', sans-serif;
         font-weight: 200;
         line-height: 1.4;
