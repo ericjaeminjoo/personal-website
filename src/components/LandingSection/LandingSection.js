@@ -93,7 +93,6 @@ const HeaderSelf = styled.h3`
 const Headshot = styled.div`
   display: block;
   position: relative;
-  overflow: hidden;
   border-radius: 48% 52% 68% 32% / 42% 28% 72% 58%;
   background-size: 500% 100%;
   background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
@@ -108,6 +107,7 @@ const Headshot = styled.div`
   backface-visibility: hidden;
   perspective: 1000;
   transform: rotateZ(360deg);
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
 
   @media ${device.mobileL} {
     margin-top: 0;
