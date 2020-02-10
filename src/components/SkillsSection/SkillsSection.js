@@ -36,8 +36,18 @@ const SkillsContent = styled.div`
 
 const SkillsSection = () => (
   <Container>
-    <SectionTitle>👨🏻‍💻 ☕</SectionTitle>
-    <SkillsContent>
+    <SectionTitle
+      data-sal="fade"
+      data-sal-duration="1000"
+      data-sal-delay="300"
+      data-sal-easing="ease">
+      👨🏻‍💻 ☕
+    </SectionTitle>
+    <SkillsContent
+      data-sal="fade"
+      data-sal-duration="1000"
+      data-sal-delay="300"
+      data-sal-easing="ease">
       <p>
         The rest of my website is currently in the midst of production! I'm just brewing some coffee
         right now, <strong>BRB!</strong>
