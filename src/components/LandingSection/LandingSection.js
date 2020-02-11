@@ -103,7 +103,6 @@ const Headshot = styled.div`
   box-shadow: 0 16.4px 36.9px -15px rgba(0, 0, 0, 0.028), 0 17.7px 59.3px -15px rgba(0, 0, 0, 0.04),
     0 22.2px 64.4px -15px rgba(0, 0, 0, 0.05), 0 42.8px 62.4px -15px rgba(0, 0, 0, 0.062),
     0 100px 125px -15px rgba(0, 0, 0, 0.09);
-  will-change: transform;
   backface-visibility: hidden;
   perspective: 1000;
   transform: rotateZ(360deg);
@@ -134,7 +133,6 @@ const Headshot = styled.div`
     background-position: center;
     mix-blend-mode: hard-light;
     animation: blobber 50s 0s ease-in-out infinite, wobbler 11s 0s linear infinite alternate;
-    will-change: transform;
     backface-visibility: hidden;
     perspective: 1000;
     transform: rotateZ(360deg);
