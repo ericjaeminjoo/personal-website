@@ -7,7 +7,7 @@ import SkillsSection from '../SkillsSection/SkillsSection';
 
 const IndexPage = () => (
   <div>
-    <SEO />
+    <SEO title="👋" />
     <GlobalStyle />
     <LandingSection />
     <AboutSection />
