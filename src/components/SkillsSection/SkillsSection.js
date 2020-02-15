@@ -36,20 +36,12 @@ const SkillsContent = styled.div`
 
 const SkillsSection = () => (
   <Container>
-    <SectionTitle
-      data-sal="fade"
-      data-sal-duration="1000"
-      data-sal-delay="480"
-      data-sal-easing="easeInOutQuart">
+    <SectionTitle>
       <span role="img" aria-label="Technologist Man and Coffee Emoji">
         👨🏻‍💻 ☕
       </span>
     </SectionTitle>
-    <SkillsContent
-      data-sal="fade"
-      data-sal-duration="1000"
-      data-sal-delay="480"
-      data-sal-easing="easeInOutQuart">
+    <SkillsContent>
       <p>
         The rest of my website is currently in the midst of production! I'm just brewing some coffee
         right now, <strong>BRB!</strong>

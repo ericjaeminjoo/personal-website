@@ -32,18 +32,8 @@ const AboutContent = styled.div`
 
 const AboutSection = () => (
   <Container>
-    <SectionTitle
-      data-sal="fade"
-      data-sal-duration="1000"
-      data-sal-delay="300"
-      data-sal-easing="ease">
-      Background
-    </SectionTitle>
-    <AboutContent
-      data-sal="fade"
-      data-sal-duration="1000"
-      data-sal-delay="300"
-      data-sal-easing="ease">
+    <SectionTitle>Background</SectionTitle>
+    <AboutContent>
       <p>
         I recently graduated from <strong>McGill University</strong>, located in Montréal, Québec,
         with a bachelor's degree in <strong>Software Engineering</strong>.
