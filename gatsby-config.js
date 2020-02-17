@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Eric Jae-Min Joo 👨🏻‍💻 Front-End Developer`,
+    title: `Front-End Developer`,
     description: `Built with Gatsby, TailwindCSS, Styled-Components, & Storybook.`,
     author: `@ericjaeminjoo`,
   },
