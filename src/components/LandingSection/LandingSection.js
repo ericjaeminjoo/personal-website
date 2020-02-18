@@ -260,8 +260,8 @@ const LandingSection = () => (
       <div>
         <HeaderHello
           data-sal="fade"
-          data-sal-duration="2000"
-          data-sal-delay="400"
+          data-sal-duration="1500"
+          data-sal-delay="100"
           data-sal-easing="easeInOutQuart">
           Hi there!{' '}
           <WaveAnimation>
@@ -272,16 +272,16 @@ const LandingSection = () => (
         </HeaderHello>
         <HeaderIntro
           data-sal="fade"
-          data-sal-duration="2000"
-          data-sal-delay="600"
+          data-sal-duration="1500"
+          data-sal-delay="100"
           data-sal-easing="easeInOutQuart">
           I'm <TextBold>Eric Jae-Min Joo</TextBold>, <br />a front-end developer passionate about
           building beautiful UI {'&'} UX as well as learning new web technologies.
         </HeaderIntro>
         <HeaderSelf
           data-sal="fade"
-          data-sal-duration="2000"
-          data-sal-delay="800"
+          data-sal-duration="1500"
+          data-sal-delay="100"
           data-sal-easing="easeInOutQuart">
           Get in touch:
           <Logos>
@@ -305,8 +305,8 @@ const LandingSection = () => (
       </div>
       <Headshot
         data-sal="fade"
-        data-sal-duration="2000"
-        data-sal-delay="1000"
+        data-sal-duration="1500"
+        data-sal-delay="100"
         data-sal-easing="easeInOutQuart"
         className="headshot-animation"
       />
