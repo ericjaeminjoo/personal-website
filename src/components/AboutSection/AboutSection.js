@@ -5,12 +5,16 @@ import SectionTitle from '../SectionTitle/SectionTitle';
 import { device } from '../media';
 
 const Container = styled.section`
-  ${tw`flex flex-col justify-center items-center`}
+  ${tw`flex flex-col justify-center items-center min-h-full`}
   padding: 50px 39px;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
 
   @media ${device.tablet} {
     ${tw`flex-row items-start`}
-    margin: -150px 70px 50px 70px;
+    margin: 50px 70px;
     margin-left: calc(-50vw + 50% + 9px);
     width: calc(100vw - 17px);
   }

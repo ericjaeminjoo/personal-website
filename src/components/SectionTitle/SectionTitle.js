@@ -6,7 +6,6 @@ const SectionTitle = styled.div`
   ${tw`uppercase tracking-widest text-center`}
   font-family: 'Manrope-ExtraBold', sans-serif;
   font-weight: 800;
-  color: #515ada;
   font-size: 1.65rem;
   margin-bottom: 25px;
   padding-bottom: 2px;

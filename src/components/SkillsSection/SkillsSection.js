@@ -5,19 +5,16 @@ import SectionTitle from '../SectionTitle/SectionTitle';
 import { device } from '../media';
 
 const Container = styled.section`
-  ${tw`flex justify-center items-center flex-col mx-auto`}
-  margin: 75px 0;
-  padding: 0 42px;
-  font-size: 1.4rem;
+  ${tw`flex flex-col justify-center items-center`}
+  padding: 50px 39px;
+  color: #fff;
+  background-color: #ff596d;
 
   @media ${device.tablet} {
-    font-size: 1.55rem;
-  }
-
-  @media ${device.laptopL} {
     ${tw`flex-row items-start`}
-    padding-top: 20px;
-    margin: 100px 0;
+    margin: 0 70px 50px 70px;
+    margin-left: calc(-50vw + 50% + 9px);
+    width: calc(100vw - 17px);
   }
 `;
 

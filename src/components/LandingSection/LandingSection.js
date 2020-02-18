@@ -94,7 +94,7 @@ const Headshot = styled.div`
   position: relative;
   border-radius: 48% 52% 68% 32% / 42% 28% 72% 58%;
   background-size: 500% 100%;
-  background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+  background: linear-gradient(90deg, #fff7e6 0%, #ffe8b0 100%);
   animation: blobber 40s 0s linear infinite, cobler 10s 0s linear infinite alternate;
   width: 25rem;
   height: 25rem;
@@ -222,6 +222,7 @@ const Headshot = styled.div`
 
 const Logos = styled.div`
   ${tw`flex items-center justify-around`}
+  color: #2E297F;
   svg,
   img {
     width: 30px;
@@ -244,34 +245,12 @@ const Logos = styled.div`
 const TextBold = styled.span`
   font-family: 'Manrope-ExtraBold', sans-serif;
   font-weight: 800;
-  color: #515ada;
+  color: #ff344b;
   padding-bottom: 2px;
-  border-bottom: dashed 1px rgba(0, 0, 0, 0.4);
+  border-bottom: dashed 1px rgba(46, 41, 127, 0.4);
 
   &:hover {
-    border-bottom: solid 1px rgba(0, 0, 0, 0.4);
-  }
-`;
-
-const WaveContainer = styled.div`
-  margin-top: -45px;
-  @media ${device.tablet} {
-    margin-top: -140px;
-  }
-  @media ${device.laptop} {
-    margin-top: -170px;
-  }
-  @media ${device.laptopL} {
-    margin-top: -232px;
-    svg {
-      margin-left: calc(-50vw + 50% + 9px);
-      width: calc(100vw - 17px);
-      stroke: #000;
-      stroke-width: 0.01;
-    }
-  }
-  @media ${device.desktop} {
-    margin-top: -273px;
+    border-bottom: solid 1px rgba(46, 41, 127, 0.4);
   }
 `;
 
