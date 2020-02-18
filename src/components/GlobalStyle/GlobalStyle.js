@@ -20,9 +20,6 @@ const GlobalStyle = createGlobalStyle`
         color: #2e3151;
         text-decoration: none;
         width: 100%;
-        background-color: #ddefff;
-        position: absolute;
-        z-index: 100;
     }
     strong {
         font-family: 'Manrope-ExtraBold', sans-serif;

@@ -2,7 +2,6 @@ import React from 'react';
 import tw from 'tailwind.macro';
 import styled from 'styled-components';
 import { GithubIcon, LinkedIn, Gmail } from '../../icons';
-import { WaveOne } from '../../svg/Waves.svg';
 import { device } from '../media';
 import headshotPhoto from '../../images/headshot-cropped.jpg';
 import resumeIcon from '../../images/resume.png';
@@ -245,7 +244,13 @@ const Logos = styled.div`
 const TextBold = styled.span`
   font-family: 'Manrope-ExtraBold', sans-serif;
   font-weight: 800;
-  color: #35385d;
+  color: #515ada;
+  padding-bottom: 2px;
+  border-bottom: dashed 1px rgba(0, 0, 0, 0.4);
+
+  &:hover {
+    border-bottom: solid 1px rgba(0, 0, 0, 0.4);
+  }
 `;
 
 const WaveContainer = styled.div`
@@ -327,9 +332,6 @@ const LandingSection = () => (
         className="headshot-animation"
       />
     </Container>
-    <WaveContainer>
-      <WaveOne />
-    </WaveContainer>
   </div>
 );
 

@@ -5,29 +5,19 @@ import SectionTitle from '../SectionTitle/SectionTitle';
 import { device } from '../media';
 
 const Container = styled.section`
-  ${tw`flex justify-center items-center flex-col mx-auto`}
-  background-color: rgb(80, 0, 202, 0.1);
-  padding: 0 45px;
+  ${tw`flex flex-col justify-center items-center`}
+  padding: 50px 39px;
 
-  @media ${device.laptopL} {
+  @media ${device.tablet} {
     ${tw`flex-row items-start`}
+    margin: -150px 70px 50px 70px;
     margin-left: calc(-50vw + 50% + 9px);
     width: calc(100vw - 17px);
   }
 `;
 
 const AboutContent = styled.div`
-  margin-bottom: 47px;
-  max-width: 675px;
-  width: 100%;
-
-  @media ${device.tablet} {
-    font-size: 1.55rem;
-  }
-
-  @media ${device.laptopL} {
-    margin-top: -56px;
-  }
+  max-width: 650px;
 `;
 
 const AboutSection = () => (

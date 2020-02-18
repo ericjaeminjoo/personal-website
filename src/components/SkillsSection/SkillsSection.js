@@ -6,9 +6,6 @@ import { device } from '../media';
 
 const Container = styled.section`
   ${tw`flex justify-center items-center flex-col mx-auto`}
-  div:first-child {
-    margin-top: 10px;
-  }
   margin: 75px 0;
   padding: 0 42px;
   font-size: 1.4rem;
@@ -21,32 +18,37 @@ const Container = styled.section`
     ${tw`flex-row items-start`}
     padding-top: 20px;
     margin: 100px 0;
-    div:first-child {
-      text-align: right;
-      padding-right: 40px;
-    }
   }
 `;
 
-const SkillsContent = styled.div`
+const SkillsRow = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+
   @media ${device.laptopL} {
     max-width: 675px;
   }
 `;
 
+const SkillsColumn = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+`;
+
 const SkillsSection = () => (
   <Container>
-    <SectionTitle>
-      <span role="img" aria-label="Technologist Man and Coffee Emoji">
-        👨🏻‍💻 ☕
-      </span>
-    </SectionTitle>
-    <SkillsContent>
-      <p>
-        The rest of my website is currently in the midst of production! I'm just brewing some coffee
-        right now, <strong>BRB!</strong>
-      </p>
-    </SkillsContent>
+    <SectionTitle>Skills</SectionTitle>
+    <SkillsRow>
+      <SkillsColumn>Languages</SkillsColumn>
+      <SkillsColumn>Frameworks</SkillsColumn>
+      <SkillsColumn>Tools</SkillsColumn>
+      <SkillsColumn>Design</SkillsColumn>
+    </SkillsRow>
   </Container>
 );
 

@@ -3,24 +3,21 @@ import styled from 'styled-components';
 import { device } from '../media';
 
 const SectionTitle = styled.div`
-  ${tw`uppercase tracking-widest mt-16`}
-  width: 200px;
+  ${tw`uppercase tracking-widest text-center`}
   font-family: 'Manrope-ExtraBold', sans-serif;
   font-weight: 800;
-  color: #35385d;
-  font-size: 1.7rem;
-  margin-top: 12px;
-  margin-bottom: 17px;
-  text-align: center;
+  color: #515ada;
+  font-size: 1.65rem;
+  margin-bottom: 25px;
+  padding-bottom: 2px;
+  border-bottom: dashed 1px rgba(0, 0, 0, 0.4);
 
-  @media ${device.tablet} {
-    margin-top: -35px;
+  &:hover {
+    border-bottom: solid 1px rgba(0, 0, 0, 0.4);
   }
 
-  @media ${device.laptopL} {
-    margin-top: -56px;
-    margin-bottom: 0;
-    padding: 0 0 0 21px;
+  @media ${device.tablet} {
+    margin-right: 45px;
   }
 `;
 
