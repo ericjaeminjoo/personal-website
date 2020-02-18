@@ -245,7 +245,7 @@ const Logos = styled.div`
 const TextBold = styled.span`
   font-family: 'Manrope-ExtraBold', sans-serif;
   font-weight: 800;
-  color: #ff344b;
+  color: #ed3046;
   padding-bottom: 2px;
   border-bottom: dashed 1px rgba(46, 41, 127, 0.4);
 

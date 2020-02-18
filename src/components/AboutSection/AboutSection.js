@@ -5,8 +5,8 @@ import SectionTitle from '../SectionTitle/SectionTitle';
 import { device } from '../media';
 
 const Container = styled.section`
-  ${tw`flex flex-col justify-center items-center min-h-full`}
-  padding: 50px 39px;
+  ${tw`flex flex-col justify-center items-center`}
+  margin: 45px 45px 100px 45px;
 
   p:last-child {
     margin-bottom: 0;
@@ -14,7 +14,6 @@ const Container = styled.section`
 
   @media ${device.tablet} {
     ${tw`flex-row items-start`}
-    margin: 50px 70px;
     margin-left: calc(-50vw + 50% + 9px);
     width: calc(100vw - 17px);
   }
