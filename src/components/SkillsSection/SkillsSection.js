@@ -7,13 +7,13 @@ import { device } from '../media';
 const Container = styled.section`
   ${tw`flex flex-col justify-center items-center`}
   color: #fff;
-  padding: 120px 45px 100px 45px;
+  padding: 65px 45px;
   background-color: #ff596d;
-  margin-left: calc(-50vw + 50% + 7px);
-  width: calc(100vw - 15px);
 
   @media ${device.tablet} {
     ${tw`flex-row items-start`}
+    margin-left: calc(-50vw + 50% + 7px);
+    width: calc(100vw - 15px);
   }
 `;
 

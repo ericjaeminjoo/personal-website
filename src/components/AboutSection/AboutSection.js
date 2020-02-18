@@ -6,7 +6,7 @@ import { device } from '../media';
 
 const Container = styled.section`
   ${tw`flex flex-col justify-center items-center`}
-  margin: 45px 45px 100px 45px;
+  margin: 0 45px 65px 45px;
 
   p:last-child {
     margin-bottom: 0;
