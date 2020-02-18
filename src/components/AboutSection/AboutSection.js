@@ -14,8 +14,6 @@ const Container = styled.section`
 
   @media ${device.tablet} {
     ${tw`flex-row items-start`}
-    margin-left: calc(-50vw + 50% + 9px);
-    width: calc(100vw - 17px);
   }
 `;
 

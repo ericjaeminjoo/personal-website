@@ -25,25 +25,24 @@ const SkillsSectionTitle = styled(SectionTitle)`
   }
   @media ${device.tablet} {
     font-size: inherit;
+    margin-right: 55px;
   }
 `;
 
 const SkillsRow = styled.div`
-  display: flex;
   width: 100%;
   font-size: 1.18rem;
 
   @media ${device.tablet} {
     font-size: inherit;
-    max-width: 675px;
+    max-width: 680px;
   }
 `;
 
 const SkillsColumn = styled.div`
   display: flex;
-  flex-direction: column;
-  flex: 1;
-  align-items: center;
+  width: 100%;
+  justify-content: space-between;
 
   ul li:first-child {
     margin: 0;
@@ -68,23 +67,21 @@ const SkillsSection = () => (
           <li>(S)CSS</li>
           <li>JavaScript (ES6+)</li>
         </ul>
-      </SkillsColumn>
-      <SkillsColumn>
         <ul>
           <li>
-            <strong>Libraries/Frameworks</strong>
+            <strong>Libraries</strong>
+            <br></br>
+            <strong>&amp; Frameworks</strong>
           </li>
+          <li>React.js</li>
+          <li>jQuery</li>
           <li>Node.js</li>
           <li>Express.js</li>
-          <li>jQuery</li>
-          <li>React.js</li>
           <li>Bootstrap</li>
           <li>Bulma</li>
           <li>Tailwind CSS</li>
           <li>Gatsby</li>
         </ul>
-      </SkillsColumn>
-      <SkillsColumn>
         <ul>
           <li>
             <strong>Tools</strong>
@@ -98,8 +95,6 @@ const SkillsSection = () => (
           <li>MongoDB</li>
           <li>Postman</li>
         </ul>
-      </SkillsColumn>
-      <SkillsColumn>
         <ul>
           <li>
             <strong>UI Design</strong>
@@ -108,6 +103,8 @@ const SkillsSection = () => (
           <li>Illustrator</li>
           <li>InDesign</li>
           <li>Lightroom</li>
+          <li>Wireframing</li>
+          <li>Prototyping</li>
         </ul>
       </SkillsColumn>
     </SkillsRow>
