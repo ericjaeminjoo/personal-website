@@ -13,7 +13,7 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
     }
     body {
-        font-size: 1.6rem;
+        font-size: 1.45rem;
         font-family: 'Manrope-ExtraLight', sans-serif;
         font-weight: 200;
         line-height: 1.4;

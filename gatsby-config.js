@@ -13,6 +13,12 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-scroll-reveal`,
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        icon: `static/favicon.ico`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-layout`,
       options: {
         component: require.resolve(`./src/components/Layout/Layout.js`),
