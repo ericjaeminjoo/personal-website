@@ -18,16 +18,20 @@ const Container = styled.section`
 `;
 
 const SkillsSectionTitle = styled(SectionTitle)`
+  font-size: 1.3rem;
   border-bottom: dashed 1px rgba(255, 255, 255, 0.4);
   &:hover {
     border-bottom: solid 1px rgba(255, 255, 255, 0.4);
+  }
+  @media ${device.tablet} {
+    font-size: inherit;
   }
 `;
 
 const SkillsRow = styled.div`
   display: flex;
   width: 100%;
-  font-size: 1.38rem;
+  font-size: 1.18rem;
 
   @media ${device.tablet} {
     font-size: inherit;
