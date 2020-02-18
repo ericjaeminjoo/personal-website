@@ -44,6 +44,9 @@ const SkillsColumn = styled.div`
   width: 100%;
   justify-content: space-between;
 
+  ul {
+    margin-right: 26px;
+  }
   ul li:first-child {
     margin: 0;
   }
