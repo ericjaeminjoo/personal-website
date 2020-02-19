@@ -1,7 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Front-End Developer`,
-    description: `Built with Gatsby, TailwindCSS, Styled-Components, & Storybook.`,
+    siteUrl: `https://ericjaeminjoo.com/`,
+    description: `New Portfolio Page Build and Designed by Eric Jae-Min Joo`,
     author: `@ericjaeminjoo`,
   },
   plugins: [

@@ -2,7 +2,7 @@
   "name": "gatsby-tailwind-styled-components-storybook-starter",
   "description": "A bare-bones Tailwind CSS + Styled-Components + Storybook starter for Gatsby",
   "version": "1.0.1",
-  "author": "Dennis Vash <dennisvash@gmail.com>",
+  "author": "Eric Jae-Min Joo <ericjaeminjoo@gmail.com>",
   "license": "MIT",
   "keywords": [
     "gatsby",
@@ -14,10 +14,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/denvash/gatsby-styled-tailwind-storybook-starter"
+    "url": "https://github.com/JJMin/gatsby-portfolio-website"
   },
   "bugs": {
-    "url": "https://github.com/denvash/gatsby-styled-tailwind-storybook-starter/issues"
+    "url": "https://github.com/JJMin/gatsby-portfolio-website/issues"
   },
   "husky": {
     "hooks": {
