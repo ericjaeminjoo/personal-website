@@ -1,10 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Front-End Developer`,
-    siteUrl: `https://ericjaeminjoo.com/`,
-    description: `Portfolio website built and designed by Eric Jae-Min Joo - Front-end Developer`,
-    author: `@ericjaeminjoo`,
-    image: `static/images/ericjaeminjoo.png`,
+    title: 'Front-End Developer',
+    titleTemplate: '%s · Eric Jae-Min Joo',
+    description: 'Portfolio website built and designed by Eric Jae-Min Joo - Front-end Developer',
+    url: 'https://ericjaeminjoo.com/',
+    image: 'images/ericjaeminjoo.png',
+    twitterUsername: '@ericjaeminjoo',
   },
   plugins: [
     `gatsby-plugin-styled-components`,
