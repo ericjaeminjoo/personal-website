@@ -10,6 +10,7 @@ import resume from '../../data/resume-2020.pdf';
 const Container = styled.section`
   ${tw`flex flex-wrap-reverse justify-center items-center min-h-screen mx-auto`}
   padding: 7rem 6rem;
+  font-family: 'Graphik-300-Light', sans-serif;
 
   @media ${device.tablet} {
     ${tw`flex-no-wrap`}
@@ -243,14 +244,24 @@ const Logos = styled.div`
 `;
 
 const TextBold = styled.span`
-  font-family: 'Manrope-ExtraBold', sans-serif;
-  font-weight: 800;
+  font-family: 'Arnhem-Black', sans-serif;
   color: #07323b;
+  letter-spacing: 0.1rem;
   padding-bottom: 2px;
   border-bottom: dashed 1px rgba(46, 41, 127, 0.4);
 
   &:hover {
     border-bottom: solid 1px rgba(46, 41, 127, 0.4);
+  }
+
+  font-size: 2.7rem;
+
+  @media ${device.tablet} {
+    font-size: 2.9rem;
+  }
+
+  @media ${device.laptop} {
+    font-size: 3.4rem;
   }
 `;
 
@@ -261,7 +272,7 @@ const LandingSection = () => (
         <HeaderHello
           data-sal="fade"
           data-sal-duration="1500"
-          data-sal-delay="100"
+          data-sal-delay="10"
           data-sal-easing="easeInOutQuart">
           Hi there{' '}
           <WaveAnimation>
@@ -273,7 +284,7 @@ const LandingSection = () => (
         <HeaderIntro
           data-sal="fade"
           data-sal-duration="1500"
-          data-sal-delay="100"
+          data-sal-delay="10"
           data-sal-easing="easeInOutQuart">
           I'm <TextBold>Eric Jae-Min Joo</TextBold>, <br />a front-end developer passionate about
           building beautiful UI {'&'} UX as well as learning new web technologies.
@@ -281,7 +292,7 @@ const LandingSection = () => (
         <HeaderSelf
           data-sal="fade"
           data-sal-duration="1500"
-          data-sal-delay="100"
+          data-sal-delay="10"
           data-sal-easing="easeInOutQuart">
           Find me on:
           <Logos>
@@ -306,7 +317,7 @@ const LandingSection = () => (
       <Headshot
         data-sal="fade"
         data-sal-duration="1500"
-        data-sal-delay="100"
+        data-sal-delay="10"
         data-sal-easing="easeInOutQuart"
         className="headshot-animation"
       />

@@ -4,9 +4,10 @@ import { device } from '../media';
 
 const SectionTitle = styled.div`
   ${tw`uppercase tracking-widest text-center`}
-  font-family: 'Manrope-ExtraBold', sans-serif;
-  font-weight: 800;
+  // font-family: 'Graphik-600-Semibold', sans-serif;
+  font-family: 'Arnhem-Black', sans-serif;
   font-size: 1.65rem;
+  letter-spacing: 0.2rem;
   margin-bottom: 25px;
   padding-bottom: 2px;
   border-bottom: dashed 1px rgba(0, 0, 0, 0.4);

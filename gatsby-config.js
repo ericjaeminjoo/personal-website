@@ -28,8 +28,10 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         custom: {
-          families: ['Freight Text Pro'],
-          urls: ['./src/fonts/fonts.css'],
+          families: [
+            'TiemposHeadline-300, Graphik-300-Light, Graphik-400-Regular, Graphik-600-Semibold, Arnhem-Bold, Arnhem-Normal, Arnhem-Blond, Arnhem-Black',
+          ],
+          urls: ['/fonts/fonts.css'],
         },
       },
     },

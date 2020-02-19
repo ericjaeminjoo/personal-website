@@ -14,8 +14,7 @@ const GlobalStyle = createGlobalStyle`
     }
     body {
         font-size: 1.45rem;
-        font-family: 'Manrope-ExtraLight', sans-serif;
-        font-weight: 200;
+        font-family: 'Graphik-300-Light', sans-serif;
         line-height: 1.4;
         color: #2e3151;
         text-decoration: none;
@@ -25,8 +24,7 @@ const GlobalStyle = createGlobalStyle`
         background-attachment: fixed;
     }
     strong {
-        font-family: 'Manrope-ExtraBold', sans-serif;
-        font-weight: 800;
+        font-family: 'Graphik-600-Semibold', sans-serif;
     }
     p {
         margin-bottom: 26px;
