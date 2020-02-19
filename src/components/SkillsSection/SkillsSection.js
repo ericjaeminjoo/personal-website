@@ -8,7 +8,8 @@ const Container = styled.section`
   ${tw`flex flex-col justify-center items-center`}
   color: #fff;
   padding: 65px 45px;
-  background-color: #ff596d;
+  // background-color: #f1e6e0;
+  background-color: #07323b;
 
   @media ${device.tablet} {
     ${tw`flex-row items-start`}

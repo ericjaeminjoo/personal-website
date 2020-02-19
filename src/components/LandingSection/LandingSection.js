@@ -245,7 +245,7 @@ const Logos = styled.div`
 const TextBold = styled.span`
   font-family: 'Manrope-ExtraBold', sans-serif;
   font-weight: 800;
-  color: #ed3046;
+  color: #07323b;
   padding-bottom: 2px;
   border-bottom: dashed 1px rgba(46, 41, 127, 0.4);
 
@@ -263,7 +263,7 @@ const LandingSection = () => (
           data-sal-duration="1500"
           data-sal-delay="100"
           data-sal-easing="easeInOutQuart">
-          Hi there!{' '}
+          Hi there{' '}
           <WaveAnimation>
             <span role="img" aria-label="Waving Hand Emoji">
               👋
@@ -283,7 +283,7 @@ const LandingSection = () => (
           data-sal-duration="1500"
           data-sal-delay="100"
           data-sal-easing="easeInOutQuart">
-          Get in touch:
+          Find me on:
           <Logos>
             <a href="https://github.com/jjmin" target="_blank" rel="noopener noreferrer">
               <GithubIcon />
