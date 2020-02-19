@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Front-End Developer`,
-    url: `https://ericjaeminjoo.com/`,
+    siteUrl: `https://ericjaeminjoo.com/`,
     description: `Portfolio website built and designed by Eric Jae-Min Joo - Front-end Developer`,
     author: `@ericjaeminjoo`,
     image: `/images/ericjaeminjoo.png`,
