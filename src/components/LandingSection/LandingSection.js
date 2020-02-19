@@ -82,6 +82,7 @@ const HeaderIntro = styled.h1`
 
 const HeaderSelf = styled.h3`
   ${tw`flex`}
+  font-family: 'Arnhem-Normal', sans-serif;
   font-size: 1.7rem;
 
   @media ${device.mobileL} {
@@ -95,7 +96,7 @@ const Headshot = styled.div`
   position: relative;
   border-radius: 48% 52% 68% 32% / 42% 28% 72% 58%;
   background-size: 500% 100%;
-  background: linear-gradient(90deg, #fff7e6 0%, #ffe8b0 100%);
+  background: linear-gradient(90deg, #fbf9f7 0%, #f0e7e0 100%);
   animation: blobber 40s 0s linear infinite, cobler 10s 0s linear infinite alternate;
   width: 25rem;
   height: 25rem;
