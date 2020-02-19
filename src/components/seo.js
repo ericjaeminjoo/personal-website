@@ -12,8 +12,10 @@ const SEO = ({ description = '', lang = 'en', meta = [], title }) => {
         site {
           siteMetadata {
             title
+            url
             description
-            author
+            url
+            image
           }
         }
       }
@@ -37,6 +39,14 @@ const SEO = ({ description = '', lang = 'en', meta = [], title }) => {
         {
           property: `og:title`,
           content: title,
+        },
+        {
+          property: `og:url`,
+          content: site.siteMetadata.url,
+        },
+        {
+          property: `og:img`,
+          content: site.siteMetadata.image,
         },
         {
           property: `og:description`,
