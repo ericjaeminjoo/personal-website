@@ -4,7 +4,7 @@ module.exports = {
     siteUrl: `https://ericjaeminjoo.com/`,
     description: `Portfolio website built and designed by Eric Jae-Min Joo - Front-end Developer`,
     author: `@ericjaeminjoo`,
-    image: `/images/ericjaeminjoo.png`,
+    image: `static/images/ericjaeminjoo.png`,
   },
   plugins: [
     `gatsby-plugin-styled-components`,
@@ -17,7 +17,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        icon: `/images/favicon.png`,
+        icon: `static/images/favicon.png`,
       },
     },
     {
