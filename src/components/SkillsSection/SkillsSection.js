@@ -1,14 +1,14 @@
 import React from 'react';
 import tw from 'tailwind.macro';
 import styled from 'styled-components';
-import SectionTitle from '../SectionTitle/SectionTitle';
 import { device } from '../media';
+import SectionContainer from '../SectionContainer/SectionContainer';
+import SectionTitle from '../SectionTitle/SectionTitle';
+import SectionContent from '../SectionContent/SectionContent';
 
-const Container = styled.section`
+const SkillsSectionContainer = styled(SectionContainer)`
   color: #fff;
-  padding: 65px 45px;
   background-color: #07323b;
-  text-align: center;
 
   @media ${device.tablet} {
     margin-left: calc(-50vw + 50% + 7px);
@@ -17,90 +17,73 @@ const Container = styled.section`
 `;
 
 const SkillsSectionTitle = styled(SectionTitle)`
-  font-size: 1.3rem;
-  display: inline-block;
   border-bottom: dashed 1px rgba(255, 255, 255, 0.4);
   &:hover {
     border-bottom: solid 1px rgba(255, 255, 255, 0.4);
-  }
-  @media ${device.tablet} {
-    font-size: inherit;
-    margin-right: 0;
   }
 `;
 
 const SkillsRow = styled.div`
   display: flex;
-  justify-content: center;
-  text-align: left;
-  font-size: 1.18rem;
-  margin: 0 auto;
-  padding-left: 3px;
-
-  @media ${device.tablet} {
-    font-size: inherit;
-    max-width: 720px;
-  }
-`;
-
-const SkillsColumn = styled.div`
-  display: flex;
-  flex: 1;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   ul {
-    margin-right: 26px;
+    width: 48%;
+    margin-bottom: 20px;
   }
-  ul li:first-child {
-    margin: 0;
+
+  ul > li:first-child {
+    text-transform: uppercase;
+    margin-bottom: 2px;
+    letter-spacing: 0.03rem;
   }
-  ul li {
-    margin: 6px 0;
+
+  @media ${device.tablet} {
+    ul {
+      width: inherit;
+      margin-bottom: 0;
+    }
   }
 `;
 
 const SkillsSection = () => (
-  <Container>
+  <SkillsSectionContainer>
     <SkillsSectionTitle>Skills</SkillsSectionTitle>
-    <SkillsRow>
-      <SkillsColumn>
+    <SectionContent>
+      <SkillsRow>
         <ul>
           <li>
             <strong>Languages</strong>
           </li>
-          <li>Java</li>
-          <li>SQL</li>
-          <li>HTML</li>
-          <li>(S)CSS</li>
           <li>JavaScript (ES6+)</li>
+          <li>HTML</li>
+          <li>CSS/Sass</li>
+          <li>Java</li>
+          <li>Python</li>
+          <li>SQL</li>
         </ul>
         <ul>
           <li>
-            <strong>Libraries</strong>
-            <br></br>
-            <strong>&amp; Frameworks</strong>
+            <strong>Libraries/Frameworks</strong>
           </li>
-          <li>React.js</li>
           <li>jQuery</li>
+          <li>React.js</li>
           <li>Node.js</li>
           <li>Express.js</li>
           <li>Bootstrap</li>
-          <li>Bulma</li>
           <li>Tailwind CSS</li>
-          <li>Gatsby</li>
         </ul>
         <ul>
           <li>
             <strong>Tools</strong>
           </li>
-          <li>Linux</li>
-          <li>Git</li>
+          <li>Bash</li>
+          <li>Git &amp; Github</li>
           <li>Webpack</li>
           <li>WordPress</li>
           <li>Netlify</li>
           <li>Heroku</li>
-          <li>MongoDB</li>
-          <li>Postman</li>
         </ul>
         <ul>
           <li>
@@ -113,9 +96,9 @@ const SkillsSection = () => (
           <li>Wireframing</li>
           <li>Prototyping</li>
         </ul>
-      </SkillsColumn>
-    </SkillsRow>
-  </Container>
+      </SkillsRow>
+    </SectionContent>
+  </SkillsSectionContainer>
 );
 
 export default SkillsSection;
