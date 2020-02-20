@@ -35,6 +35,7 @@ const SkillsRow = styled.div`
   text-align: left;
   font-size: 1.18rem;
   margin: 0 auto;
+  padding-left: 3px;
 
   @media ${device.tablet} {
     font-size: inherit;

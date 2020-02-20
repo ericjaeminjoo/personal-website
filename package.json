@@ -14,10 +14,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/JJMin/gatsby-portfolio-website"
+    "url": "https://github.com/JJMin/personal-website"
   },
   "bugs": {
-    "url": "https://github.com/JJMin/gatsby-portfolio-website/issues"
+    "url": "https://github.com/JJMin/personal-website/issues"
   },
   "husky": {
     "hooks": {
