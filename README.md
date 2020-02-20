@@ -13,5 +13,5 @@
     </a>
 </p>
 <div align="center">
-<img src="static/images/ericjaeminjoo.png" alt="Screenshot of Personal Website Landing Page" width="50%">
+<img src="static/images/ericjaeminjoo.png" alt="Screenshot of Personal Website Landing Page">
 </div>
