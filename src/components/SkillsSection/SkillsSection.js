@@ -5,14 +5,12 @@ import SectionTitle from '../SectionTitle/SectionTitle';
 import { device } from '../media';
 
 const Container = styled.section`
-  ${tw`flex flex-col justify-center items-center`}
   color: #fff;
   padding: 65px 45px;
-  // background-color: #f1e6e0;
   background-color: #07323b;
+  text-align: center;
 
   @media ${device.tablet} {
-    ${tw`flex-row items-start`}
     margin-left: calc(-50vw + 50% + 7px);
     width: calc(100vw - 15px);
   }
@@ -20,29 +18,33 @@ const Container = styled.section`
 
 const SkillsSectionTitle = styled(SectionTitle)`
   font-size: 1.3rem;
+  display: inline-block;
   border-bottom: dashed 1px rgba(255, 255, 255, 0.4);
   &:hover {
     border-bottom: solid 1px rgba(255, 255, 255, 0.4);
   }
   @media ${device.tablet} {
     font-size: inherit;
-    margin-right: 55px;
+    margin-right: 0;
   }
 `;
 
 const SkillsRow = styled.div`
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: left;
   font-size: 1.18rem;
+  margin: 0 auto;
 
   @media ${device.tablet} {
     font-size: inherit;
-    max-width: 680px;
+    max-width: 720px;
   }
 `;
 
 const SkillsColumn = styled.div`
   display: flex;
-  width: 100%;
+  flex: 1;
   justify-content: space-between;
 
   ul {
