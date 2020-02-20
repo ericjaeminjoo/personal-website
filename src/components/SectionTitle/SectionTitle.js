@@ -4,8 +4,7 @@ import { device } from '../media';
 
 const SectionTitle = styled.div`
   ${tw`uppercase tracking-widest text-center`}
-  // font-family: 'Graphik-600-Semibold', sans-serif;
-  font-family: 'Arnhem-Black', sans-serif;
+  font-family: 'Graphik-600-Semibold', sans-serif;
   font-size: 1.65rem;
   letter-spacing: 0.2rem;
   margin-bottom: 25px;
