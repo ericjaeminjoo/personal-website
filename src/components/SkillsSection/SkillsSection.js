@@ -64,7 +64,7 @@ const SkillsSection = () => (
         </ul>
         <ul>
           <li>
-            <strong>Libraries/Frameworks</strong>
+            <strong>Libraries</strong>
           </li>
           <li>jQuery</li>
           <li>React.js</li>

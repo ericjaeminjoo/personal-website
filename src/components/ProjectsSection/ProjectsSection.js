@@ -79,8 +79,9 @@ const ProjectsSection = () => {
 
         <h1 className="projectTitle">github-api-react-project</h1>
         <p className="projectDescription">
-          A small React application that uses the Fetch API to get real-time data on the most
-          starred repositories hosted on GitHub using their GitHub API V3.
+          A visually pleasing arrangement of popular GitHub repositories that, based on the selected
+          language tab, will update cards dynamically using live data that is fetched from GitHub
+          using their GitHub API V3.
         </p>
         <ul className="projectStack">
           <li>React</li>
