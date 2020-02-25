@@ -6,6 +6,7 @@ import { device } from '../media';
 import headshotPhoto from '../../images/headshot-cropped.jpg';
 import resumeIcon from '../../images/resume.png';
 import resume from '../../data/resume-2020.pdf';
+import Flip from 'react-reveal/Flip';
 
 const Container = styled.section`
   ${tw`flex flex-wrap-reverse justify-center items-center min-h-screen mx-auto`}
@@ -269,59 +270,43 @@ const TextBold = styled.span`
 const LandingSection = () => (
   <div>
     <Container>
-      <div>
-        <HeaderHello
-          data-sal="fade"
-          data-sal-duration="1500"
-          data-sal-delay="10"
-          data-sal-easing="easeInOutQuart">
-          Hi there{' '}
-          <WaveAnimation>
-            <span role="img" aria-label="Waving Hand Emoji">
-              👋
-            </span>
-          </WaveAnimation>
-        </HeaderHello>
-        <HeaderIntro
-          data-sal="fade"
-          data-sal-duration="1500"
-          data-sal-delay="10"
-          data-sal-easing="easeInOutQuart">
-          I'm <TextBold>Eric Jae-Min Joo</TextBold>, <br />a front-end developer passionate about
-          building beautiful UI {'&'} UX as well as learning new web technologies.
-        </HeaderIntro>
-        <HeaderSelf
-          data-sal="fade"
-          data-sal-duration="1500"
-          data-sal-delay="10"
-          data-sal-easing="easeInOutQuart">
-          Find me on:
-          <Logos>
-            <a href="https://github.com/jjmin" target="_blank" rel="noopener noreferrer">
-              <GithubIcon />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/ericjaeminjoo"
-              target="_blank"
-              rel="noopener noreferrer">
-              <LinkedIn />
-            </a>
-            <a href="mailto:ericjaeminjoo@gmail.com" target="_blank" rel="noopener noreferrer">
-              <Gmail />
-            </a>
-            <a href={resume} target="_blank" rel="noopener noreferrer">
-              <img src={resumeIcon} alt="Resume Icon" />
-            </a>
-          </Logos>
-        </HeaderSelf>
-      </div>
-      <Headshot
-        data-sal="fade"
-        data-sal-duration="1500"
-        data-sal-delay="10"
-        data-sal-easing="easeInOutQuart"
-        className="headshot-animation"
-      />
+      <Flip top cascade duration="1250">
+        <div>
+          <HeaderHello>
+            Hi there{' '}
+            <WaveAnimation>
+              <span role="img" aria-label="Waving Hand Emoji">
+                👋
+              </span>
+            </WaveAnimation>
+          </HeaderHello>
+          <HeaderIntro>
+            I'm <TextBold>Eric Jae-Min Joo</TextBold>, <br />a front-end developer passionate about
+            building beautiful UI {'&'} UX as well as learning new web technologies.
+          </HeaderIntro>
+          <HeaderSelf>
+            Find me on:
+            <Logos>
+              <a href="https://github.com/jjmin" target="_blank" rel="noopener noreferrer">
+                <GithubIcon />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/ericjaeminjoo"
+                target="_blank"
+                rel="noopener noreferrer">
+                <LinkedIn />
+              </a>
+              <a href="mailto:ericjaeminjoo@gmail.com" target="_blank" rel="noopener noreferrer">
+                <Gmail />
+              </a>
+              <a href={resume} target="_blank" rel="noopener noreferrer">
+                <img src={resumeIcon} alt="Resume Icon" />
+              </a>
+            </Logos>
+          </HeaderSelf>
+        </div>
+        <Headshot className="headshot-animation" />
+      </Flip>
     </Container>
   </div>
 );

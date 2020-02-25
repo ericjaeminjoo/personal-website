@@ -12,11 +12,16 @@ import { device } from '../media';
 const ProjectsSectionContent = styled(SectionContent)`
   max-width: 750px;
 
+  img {
+    border: 9px solid #2b616b;
+  }
+
   .projectTitle {
     font-size: 1.8rem;
     font-family: 'Arnhem-Blond', sans-serif;
     letter-spacing: 0.05rem;
     margin: 24px 0 12px 0;
+    color: #2b616b;
   }
 
   .projectDescription {
@@ -94,13 +99,13 @@ const ProjectsSection = () => {
             href="https://github.com/JJMin/github-api-react-project"
             target="_blank"
             rel="noopener noreferrer">
-            <GoMarkGithub />
+            <GoMarkGithub color="#2b616b" />
           </a>
           <a
             href="https://github-api-react-project.netlify.com/"
             target="_blank"
             rel="noopener noreferrer">
-            <MdOpenInNew />
+            <MdOpenInNew color="#2b616b" />
           </a>
         </div>
       </ProjectsSectionContent>
