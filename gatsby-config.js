@@ -16,6 +16,13 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-scroll-reveal`,
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/images`,
+        name: 'images',
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         icon: `static/images/favicon.png`,
@@ -36,14 +43,6 @@ module.exports = {
           ],
           urls: ['/fonts/fonts.css'],
         },
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `data`,
-        path: `${__dirname}/src/data`,
-        ignore: [`**/\.*`], // ignore files starting with a dot
       },
     },
   ],
