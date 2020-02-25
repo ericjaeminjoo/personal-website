@@ -1,10 +1,9 @@
 import React from 'react';
-import tw from 'tailwind.macro';
 import styled from 'styled-components';
-import { device } from '../media';
 import SectionContainer from '../SectionContainer/SectionContainer';
 import SectionTitle from '../SectionTitle/SectionTitle';
 import SectionContent from '../SectionContent/SectionContent';
+import { device } from '../media';
 
 const SkillsSectionContainer = styled(SectionContainer)`
   color: #fff;

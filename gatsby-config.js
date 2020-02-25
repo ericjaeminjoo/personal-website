@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: 'Front-End Developer',
-    titleTemplate: '%s · Eric Jae-Min Joo',
-    description: 'Personal website built and designed by Eric Jae-Min Joo - Front-end Developer',
+    titleTemplate: '%s · Front-End Developer',
+    description: 'Personal website built and designed by Eric Jae-Min Joo - Front-End Developer',
     url: 'https://ericjaeminjoo.com/',
     image: 'images/ericjaeminjoo.png',
     twitterUsername: '@ericjaeminjoo',

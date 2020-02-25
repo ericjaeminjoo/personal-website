@@ -7,6 +7,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
 import { GoMarkGithub } from 'react-icons/go';
 import { MdOpenInNew } from 'react-icons/md';
+import { device } from '../media';
 
 const ProjectsSectionContent = styled(SectionContent)`
   max-width: 750px;
@@ -24,15 +25,23 @@ const ProjectsSectionContent = styled(SectionContent)`
 
   .projectStack {
     display: flex;
+    flex-wrap: wrap;
     li {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       font-family: 'Graphik-300-Light', sans-serif;
       background-color: #f6f6f6;
       padding: 4px;
-      margin: 0 5px;
+      margin: 5px 5px;
     }
     li:first-child {
-      margin: 0 5px 0 0;
+      margin-left: 0;
+    }
+  }
+
+  @media ${device.tablet} {
+    .projectStack li {
+      font-size: 1.4rem;
+      margin: 0 5px;
     }
   }
 
@@ -42,6 +51,9 @@ const ProjectsSectionContent = styled(SectionContent)`
     font-size: 2.2rem;
     svg {
       margin-right: 5px;
+    }
+    svg:hover {
+      color: #07323b;
     }
   }
 `;
@@ -77,10 +89,16 @@ const ProjectsSection = () => {
           <li>Flexbox Layout</li>
         </ul>
         <div className="projectIcons">
-          <a href="https://github.com/JJMin/github-api-react-project" target="_blank">
+          <a
+            href="https://github.com/JJMin/github-api-react-project"
+            target="_blank"
+            rel="noopener noreferrer">
             <GoMarkGithub />
           </a>
-          <a href="https://github-api-react-project.netlify.com/" target="_blank">
+          <a
+            href="https://github-api-react-project.netlify.com/"
+            target="_blank"
+            rel="noopener noreferrer">
             <MdOpenInNew />
           </a>
         </div>
