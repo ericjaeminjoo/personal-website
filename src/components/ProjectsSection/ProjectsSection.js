@@ -54,9 +54,9 @@ const ProjectsSectionContent = styled(SectionContent)`
   .projectIcons {
     display: flex;
     margin-top: 13px;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     svg {
-      margin-right: 5px;
+      margin-right: 6px;
     }
     svg:hover {
       color: #07323b;

@@ -9,9 +9,10 @@ const FooterContainer = styled.footer`
   color: #fff;
   background-color: #07323b;
   padding: 30px 40px;
+  font-size: 1.25rem;
 
-  .left-logo {
-    max-width: 200px;
+  .left-side {
+    max-width: 157px;
   }
   ul {
     display: flex;
@@ -25,6 +26,10 @@ const FooterContainer = styled.footer`
     text-decoration: none;
   }
   @media ${device.laptop} {
+    font-size: inherit;
+    .left-side {
+      max-width: 200px;
+    }
     padding: 65px 170px;
     margin-left: calc(-50vw + 50% + 7px);
     width: calc(100vw - 15px);
@@ -35,14 +40,17 @@ const FooterContainer = styled.footer`
 `;
 
 const NameChange = styled.span`
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   letter-spacing: 0.04rem;
   font-family: 'Arnhem-Normal', sans-serif;
+  @media ${device.tablet} {
+    font-size: 1.6rem;
+  }
 `;
 
 const NavBar = () => (
   <FooterContainer>
-    <h3 className="left-logo">
+    <h3 className="left-side">
       Designed and Developed by <NameChange>Eric Jae-Min Joo</NameChange> 👏
     </h3>
     <ul>
