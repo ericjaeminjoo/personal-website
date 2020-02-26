@@ -57,9 +57,8 @@ const SkillsSection = () => (
           </li>
           <li>JavaScript (ES6+)</li>
           <li>HTML</li>
-          <li>CSS/Sass</li>
+          <li>CSS &amp; Sass</li>
           <li>Java</li>
-          <li>Python</li>
           <li>SQL</li>
         </ul>
         <ul>

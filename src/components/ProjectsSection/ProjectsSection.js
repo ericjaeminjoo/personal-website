@@ -10,10 +10,11 @@ import { MdOpenInNew } from 'react-icons/md';
 import { device } from '../media';
 
 const ProjectsSectionContent = styled(SectionContent)`
-  max-width: 750px;
+  max-width: 600px;
+  margin: 40px 0;
 
-  img {
-    border: 9px solid #2b616b;
+  &:first-child {
+    margin-top: 0;
   }
 
   .projectTitle {
@@ -73,42 +74,104 @@ const ProjectsSection = () => {
           }
         }
       }
+      imageTwo: file(relativePath: { eq: "manaba.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `);
+
+  const Separator = styled.hr`
+    line-height: 1em;
+    position: relative;
+    outline: 0;
+    border: 0;
+    color: black;
+    text-align: center;
+    height: 1.5em;
+    opacity: 0.5;
+    &:before {
+      content: '';
+      background: linear-gradient(to right, transparent, #07323b, transparent);
+      position: absolute;
+      left: 0;
+      top: 50%;
+      width: 100%;
+      height: 1px;
+    }
+    &:after {
+      content: '🔥🔥🔥';
+      position: relative;
+      display: inline-block;
+      padding: 0 0.5em;
+      line-height: 1.5em;
+      color: #07323b;
+      background-color: #fcfcfa;
+    }
+  `;
 
   return (
     <SectionContainer>
       <SectionTitle>Recent Projects</SectionTitle>
-      <ProjectsSectionContent>
-        <Img fluid={data.imageOne.childImageSharp.fluid} />
+      <div>
+        <ProjectsSectionContent>
+          <Img fluid={data.imageOne.childImageSharp.fluid} />
+          <h1 className="projectTitle">github-api-react-project</h1>
+          <p className="projectDescription">
+            A visually pleasing arrangement of popular GitHub repositories that, based on the
+            selected language tab, will update cards dynamically using live data that is fetched
+            from GitHub using their GitHub API V3.
+          </p>
+          <ul className="projectStack">
+            <li>React</li>
+            <li>GitHub API V3</li>
+            <li>Styled Components</li>
+            <li>Flexbox Layout</li>
+          </ul>
+          <div className="projectIcons">
+            <a
+              href="https://github.com/JJMin/github-api-react-project"
+              target="_blank"
+              rel="noopener noreferrer">
+              <GoMarkGithub color="#2b616b" />
+            </a>
+            <a
+              href="https://github-api-react-project.netlify.com/"
+              target="_blank"
+              rel="noopener noreferrer">
+              <MdOpenInNew color="#2b616b" />
+            </a>
+          </div>
+        </ProjectsSectionContent>
+        <Separator />
+        <ProjectsSectionContent>
+          <Img fluid={data.imageTwo.childImageSharp.fluid} />
 
-        <h1 className="projectTitle">github-api-react-project</h1>
-        <p className="projectDescription">
-          A visually pleasing arrangement of popular GitHub repositories that, based on the selected
-          language tab, will update cards dynamically using live data that is fetched from GitHub
-          using their GitHub API V3.
-        </p>
-        <ul className="projectStack">
-          <li>React</li>
-          <li>GitHub API V3</li>
-          <li>Styled Components</li>
-          <li>Flexbox Layout</li>
-        </ul>
-        <div className="projectIcons">
-          <a
-            href="https://github.com/JJMin/github-api-react-project"
-            target="_blank"
-            rel="noopener noreferrer">
-            <GoMarkGithub color="#2b616b" />
-          </a>
-          <a
-            href="https://github-api-react-project.netlify.com/"
-            target="_blank"
-            rel="noopener noreferrer">
-            <MdOpenInNew color="#2b616b" />
-          </a>
-        </div>
-      </ProjectsSectionContent>
+          <h1 className="projectTitle">MANABA</h1>
+          <p className="projectDescription">
+            A fully-responsive website that I designed and developed for MANABA, following their
+            visuals with vibrant aesthetics and to showcase the organizations goals and events.
+          </p>
+          <ul className="projectStack">
+            <li>HTML</li>
+            <li>Sass</li>
+            <li>JavaScript</li>
+            <li>jQuery</li>
+            <li>Bulma CSS Framework</li>
+          </ul>
+          <div className="projectIcons">
+            <a href="https://github.com/JJMin/MANABA" target="_blank" rel="noopener noreferrer">
+              <GoMarkGithub color="#2b616b" />
+            </a>
+            <a href="https://manaba.ca/" target="_blank" rel="noopener noreferrer">
+              <MdOpenInNew color="#2b616b" />
+            </a>
+          </div>
+        </ProjectsSectionContent>
+      </div>
     </SectionContainer>
   );
 };

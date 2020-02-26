@@ -270,7 +270,7 @@ const TextBold = styled.span`
 const LandingSection = () => (
   <div>
     <Container>
-      <Flip top cascade duration="1250">
+      <Flip top cascade duration="1250" delay="290">
         <div>
           <HeaderHello>
             Hi there{' '}
