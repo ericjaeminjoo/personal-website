@@ -85,6 +85,7 @@ const ProjectsSection = () => {
   `);
 
   const Separator = styled.hr`
+    // HR with centered text - code by Scott Zirkel @ https://codepen.io/scottzirkel/pen/yNxNME
     line-height: 1em;
     position: relative;
     outline: 0;
@@ -121,12 +122,13 @@ const ProjectsSection = () => {
           <Img fluid={data.imageOne.childImageSharp.fluid} />
           <h1 className="projectTitle">github-api-react-project</h1>
           <p className="projectDescription">
-            A visually pleasing arrangement of popular GitHub repositories that, based on the
-            selected language tab, will update cards dynamically using live data that is fetched
-            from GitHub using their GitHub API V3.
+            A visual arrangement of popular GitHub repositories that, based on the selected language
+            tab, will update cards dynamically using live data that is fetched from GitHub using
+            their GitHub API V3.
           </p>
           <ul className="projectStack">
             <li>React</li>
+            <li>React Hooks</li>
             <li>GitHub API V3</li>
             <li>Styled Components</li>
             <li>Flexbox Layout</li>

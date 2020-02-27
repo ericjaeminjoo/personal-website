@@ -67,19 +67,6 @@ const NavBar = () => (
           LinkedIn
         </a>
       </li>
-      <li>
-        <a href="mailto:ericjaeminjoo@gmail.com" target="_blank" rel="noopener noreferrer">
-          Email
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://ericjaeminjoo.com/static/resume-2020-96af0aaced2cb789aec97401bb96251c.pdf"
-          target="_blank"
-          rel="noopener noreferrer">
-          Resume
-        </a>
-      </li>
     </ul>
   </FooterContainer>
 );
