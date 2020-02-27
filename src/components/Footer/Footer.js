@@ -31,8 +31,6 @@ const FooterContainer = styled.footer`
       max-width: 200px;
     }
     padding: 65px 170px;
-    margin-left: calc(-50vw + 50% + 7px);
-    width: calc(100vw - 15px);
     ul li {
       margin: 0 30px;
     }

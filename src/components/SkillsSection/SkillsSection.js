@@ -8,11 +8,6 @@ import { device } from '../media';
 const SkillsSectionContainer = styled(SectionContainer)`
   color: #fff;
   background-color: #07323b;
-
-  @media ${device.tablet} {
-    margin-left: calc(-50vw + 50% + 7px);
-    width: calc(100vw - 15px);
-  }
 `;
 
 const SkillsSectionTitle = styled(SectionTitle)`
