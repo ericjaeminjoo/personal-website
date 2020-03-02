@@ -81,6 +81,13 @@ const ProjectsSection = () => {
           }
         }
       }
+      imageThree: file(relativePath: { eq: "react-browse-movies.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `);
 
@@ -118,6 +125,37 @@ const ProjectsSection = () => {
     <SectionContainer>
       <SectionTitle>Recent Projects</SectionTitle>
       <div>
+        <ProjectsSectionContent>
+          <Img fluid={data.imageThree.childImageSharp.fluid} />
+          <h1 className="projectTitle">react-browse-movies</h1>
+          <p className="projectDescription">
+            An application that showcases movies and movie information in a minimalist, clean
+            fashion where movie cards are dynamically created based on fetched data via The Movie
+            Database (TMDb)'s API.
+          </p>
+          <ul className="projectStack">
+            <li>React</li>
+            <li>React Hooks</li>
+            <li>Reach Router</li>
+            <li>Styled Components</li>
+            <li>TMDb API</li>
+          </ul>
+          <div className="projectIcons">
+            <a
+              href="https://github.com/JJMin/react-browse-movies"
+              target="_blank"
+              rel="noopener noreferrer">
+              <GoMarkGithub color="#2b616b" />
+            </a>
+            <a
+              href="https://react-browse-movies.netlify.com/"
+              target="_blank"
+              rel="noopener noreferrer">
+              <MdOpenInNew color="#2b616b" />
+            </a>
+          </div>
+        </ProjectsSectionContent>
+        <Separator />
         <ProjectsSectionContent>
           <Img fluid={data.imageOne.childImageSharp.fluid} />
           <h1 className="projectTitle">github-api-react-project</h1>
